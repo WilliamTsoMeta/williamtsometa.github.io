@@ -1,3 +1,4 @@
-name: WilliamLibrary
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+name: DopeTrope
+description: DopeTrope template for Jekyll
+paginate: 10
+baseurl: '/DopeTrope-Jekyll-Theme'

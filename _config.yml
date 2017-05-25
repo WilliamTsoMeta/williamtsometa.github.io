@@ -4,3 +4,4 @@ paginate: 10
 # baseurl: '/DopeTrope-Jekyll-Theme'
 baseurl: ''
 gems: [jekyll-paginate]
+exclude: [examples,drafts]

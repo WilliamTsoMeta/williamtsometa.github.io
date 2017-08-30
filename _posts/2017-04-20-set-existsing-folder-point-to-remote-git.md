@@ -1,4 +1,4 @@
-# set existsing folder point to remote git
+# set-existsing-folder-point-to-remote-git
 
 ``` bash
 1. $ git init

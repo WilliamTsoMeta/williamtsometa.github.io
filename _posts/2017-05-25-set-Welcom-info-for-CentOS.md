@@ -1,4 +1,4 @@
-### set Welcom window for centos
+### set Welcom info for centos
 
 ```bash
 $ vim /etc/motd

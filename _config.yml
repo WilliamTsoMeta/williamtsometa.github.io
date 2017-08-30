@@ -22,7 +22,7 @@ description: ""
 keywords: ""
 
 # Site settings
-url: http://williamvittso.github.io
+url: https://williamvittso.github.io
 baseurl: "/"
 # baseurl: ""
 
@@ -35,12 +35,12 @@ author:
   email     : vitalitymailg@gmail.com
   url       : https://williamvittso.github.io
   github    : https://github.com/williamvittso
-#  twitter   : http://twitter.com/nandomoreirame
-#  facebook  : http://facebook.com/fernando.dev
-#  linkedin  : http://linkedin.com/in/nandomoreirame
+#  twitter   : https://twitter.com/nandomoreirame
+#  facebook  : https://facebook.com/fernando.dev
+ linkedin  : https://www.linkedin.com/in/%E5%AE%87-%E6%9B%B9-2708a599/
 
 # google_analytics: UA-52446115-1
-#repo: http://github.com/nandomoreirame/dotX
+#repo: https://github.com/nandomoreirame/dotX
 
 # comments
 disqus_shortname: "comments"

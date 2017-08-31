@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
 https://expressjs.com/en/starter/installing.html
 

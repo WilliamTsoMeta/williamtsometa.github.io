@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # set-existsing-folder-point-to-remote-git
 
 ``` bash

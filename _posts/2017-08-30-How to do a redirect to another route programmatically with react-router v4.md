@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ### How to do a redirect to another route programmatically with react-router v4.
 
 

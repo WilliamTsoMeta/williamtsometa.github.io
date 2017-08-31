@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
+
+# permalink and highlighter
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : pygments
+
+# SEO settings
+title: Full-stack developer William Vit
+description: ""
+keywords: ""
+
+# Site settings
+url: https://williamvittso.github.io
+baseurl: "/"
+# baseurl: ""
+
+# Author settings
+author:
+  name      : William Vit Tso
+  job       : Full Stack Engineer
+  bio       : ""
+  thumb     : /images/author.jpg
+  email     : vitalitymailg@gmail.com
+  url       : https://williamvittso.github.io
+  github    : https://github.com/williamvittso
+# twitter   : https://twitter.com/nandomoreirame
+# facebook  : https://facebook.com/fernando.dev
+  linkedin  : https://www.linkedin.com/in/%E5%AE%87-%E6%9B%B9-2708a599/
+
+# google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/dotX
+
+# comments
+disqus_shortname: "fernandomoreira"

@@ -1,0 +1,21 @@
+<h1 id="set-existsing-folder-point-to-remote-git">set-existsing-folder-point-to-remote-git</h1>
+
+<p>``` bash
+1. $ git init</p>
+
+<ol>
+  <li>
+    <p>$ git remote add origin https://github.com/xxx/xxx.git</p>
+  </li>
+  <li>
+    <p>$ git branch –set-upstream-to=origin/<branch> master</branch></p>
+  </li>
+  <li>
+    <p>$ git pull –allow-unrelated-histories
+```
+<strong>watch out</strong> here’s needs https:// not ssh, in case you don’t have the SSH keys. but you can also use ssh if you’d prefer.</p>
+  </li>
+</ol>
+
+<p>In my case, error was just <code>fatal: refusing to merge unrelated histories</code> on every especially first pull request after remotely adding a git repo.
+Using <code>--allow-unrelated-histories</code> flag worked with pull request in this way</p>

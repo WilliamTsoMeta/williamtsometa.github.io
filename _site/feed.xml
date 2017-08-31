@@ -1,1 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-31T16:00:57+08:00</updated><id>http://localhost:4000/</id><title type="html">Site Title</title><subtitle>An amazing website.</subtitle><author><name>Your Name</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-31T16:54:38+08:00</updated><id>http://localhost:4000/</id><title type="html">WilliamVitTso</title><subtitle>An amazing website.</subtitle><author><name>WilliamVitTso</name><email>vitalitymailg@gmail.com</email></author><entry><title type="html">How to do a redirect to another route programmatically with react Router v4</title><link href="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/" rel="alternate" type="text/html" title="How to do a redirect to another route programmatically with react Router v4" /><published>2017-08-30T00:00:00+08:00</published><updated>2017-08-30T00:00:00+08:00</updated><id>http://localhost:4000/How%20to%20do%20a%20redirect%20to%20another%20route%20programmatically%20with%20react-router%20v4</id><content type="html" xml:base="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/">&lt;h3 id=&quot;how-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4&quot;&gt;How to do a redirect to another route programmatically with react-router v4.&lt;/h3&gt;
+
+&lt;h4 id=&quot;headerjs&quot;&gt;Header.js&lt;/h4&gt;
+&lt;h4 id=&quot;first-of-all-just-import-withrouter-with-thisyou-can-get-access-to-the-history-objects-properties-and-the-closest-s-match-via-the-withrouter-higher-order-component-withrouter-will-re-render-its-component-every-time-the-route-changes-with-the-same-props-as--render-props--match-location-history-&quot;&gt;first of all just import withRouter, with this,You can get access to the history object’s properties and the closest &lt;Route&gt;'s match via the withRouter higher-order component. withRouter will re-render its component every time the route changes with the same props as &lt;Route&gt; render props: { match, location, history }.&lt;/Route&gt;&lt;/Route&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ....&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;withRouter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react-router'&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;functionMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// then push you path into history.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/path&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// export component by invoke withRouter.&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;withRouter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;and-for-navigator-which-normally-used-as-public-component-and-it-not-rendered-by--you-need-use-createbrowserhistory-to-create-history-object-for-it-consider-following-example&quot;&gt;And for Navigator which normally used as public component and it not rendered by &lt;Route&gt;&lt;/Route&gt; you need use createBrowserHistory to create history object for it. Consider following example.&lt;/h4&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Routers.js&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBrowserHistory&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'history'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// import createBrowserHistory to create react history object for header component&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBrowserHistory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Routers&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;BrowserRouter&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/platform&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Header&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// set history as Header.js's props without createBrowserHistory you will not able to access history here.&lt;/span&gt;
+
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Route&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/bom&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bom&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Bom&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;                &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Route&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;// ....&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Switch&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/BrowserRouter&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Routers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>WilliamVitTso</name><email>vitalitymailg@gmail.com</email></author><summary type="html">How to do a redirect to another route programmatically with react-router v4.</summary></entry><entry><title type="html">Set Welcom Info For Centos</title><link href="http://localhost:4000/set-Welcom-info-for-CentOS/" rel="alternate" type="text/html" title="Set Welcom Info For Centos" /><published>2017-05-25T00:00:00+08:00</published><updated>2017-05-25T00:00:00+08:00</updated><id>http://localhost:4000/set-Welcom-info-for-CentOS</id><content type="html" xml:base="http://localhost:4000/set-Welcom-info-for-CentOS/">&lt;h3 id=&quot;set-welcom-info-for-centos&quot;&gt;set Welcom info for centos&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;vim /etc/motd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;input something use full such as where is your application directory is.&lt;/p&gt;</content><author><name>WilliamVitTso</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set Welcom info for centos</summary></entry><entry><title type="html">Set Existsing Folder Point To Remote Git</title><link href="http://localhost:4000/set-existsing-folder-point-to-remote-git/" rel="alternate" type="text/html" title="Set Existsing Folder Point To Remote Git" /><published>2017-04-20T00:00:00+08:00</published><updated>2017-04-20T00:00:00+08:00</updated><id>http://localhost:4000/set-existsing-folder-point-to-remote-git</id><content type="html" xml:base="http://localhost:4000/set-existsing-folder-point-to-remote-git/">&lt;h1 id=&quot;set-existsing-folder-point-to-remote-git&quot;&gt;set-existsing-folder-point-to-remote-git&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+
+2. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/xxx/xxx.git
+
+3. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch --set-upstream-to&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;origin/&amp;lt;branch&amp;gt; master
+
+4. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git pull --allow-unrelated-histories
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;watch out&lt;/strong&gt; here’s needs https:// not ssh, in case you don’t have the SSH keys. but you can also use ssh if you’d prefer.&lt;/p&gt;
+
+&lt;p&gt;In my case, error was just &lt;code class=&quot;highlighter-rouge&quot;&gt;fatal: refusing to merge unrelated histories&lt;/code&gt; on every especially first pull request after remotely adding a git repo.
+Using &lt;code class=&quot;highlighter-rouge&quot;&gt;--allow-unrelated-histories&lt;/code&gt; flag worked with pull request in this way&lt;/p&gt;</content><author><name>WilliamVitTso</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set-existsing-folder-point-to-remote-git</summary></entry><entry><title type="html">Use Nodejs Server To Serve &amp;amp; Test React App On Centos 6</title><link href="http://localhost:4000/use-nodejs-server-to-serve-&-test-react-app-on-centos-6/" rel="alternate" type="text/html" title="Use Nodejs Server To Serve &amp; Test React App On Centos 6" /><published>2017-04-19T00:00:00+08:00</published><updated>2017-04-19T00:00:00+08:00</updated><id>http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6</id><content type="html" xml:base="http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6/">&lt;p&gt;https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
+https://expressjs.com/en/starter/installing.html&lt;/p&gt;
+
+&lt;h3 id=&quot;1-download-nodejs&quot;&gt;1. Download Node.js&lt;/h3&gt;
+
+&lt;p&gt;You will want to download the latest stable version of Node.js, which can be done by running the command below. It runs a script that automatically steps you through the installation process. The script is downloaded directly from Joylent (the makers of Node.js) at their NodeSource repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;r,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;engine='',&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;count_lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/tmp&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;curl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-sL&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;https://rpm.nodesource.com/setup&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bash&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;
+notice here need update url flowing the instruction.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-install-nodejs&quot;&gt;2. Install Node.js&lt;/h3&gt;
+
+&lt;p&gt;Once the script detects that you do not have Node.js installed, enter the following command to begin the install via the yum package manager.&lt;/p&gt;
+
+&lt;p&gt;yum install -y nodejs&lt;/p&gt;</content><author><name>WilliamVitTso</name><email>vitalitymailg@gmail.com</email></author><summary type="html">https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/ https://expressjs.com/en/starter/installing.html</summary></entry></feed>

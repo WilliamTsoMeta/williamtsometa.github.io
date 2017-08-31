@@ -1,0 +1,15 @@
+<h1 id="set-existsing-folder-point-to-remote-git">set-existsing-folder-point-to-remote-git</h1>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>1. <span class="nv">$ </span>git init
+
+2. <span class="nv">$ </span>git remote add origin https://github.com/xxx/xxx.git
+
+3. <span class="nv">$ </span>git branch --set-upstream-to<span class="o">=</span>origin/&lt;branch&gt; master
+
+4. <span class="nv">$ </span>git pull --allow-unrelated-histories
+</code></pre>
+</div>
+<p><strong>watch out</strong> here’s needs https:// not ssh, in case you don’t have the SSH keys. but you can also use ssh if you’d prefer.</p>
+
+<p>In my case, error was just <code class="highlighter-rouge">fatal: refusing to merge unrelated histories</code> on every especially first pull request after remotely adding a git repo.
+Using <code class="highlighter-rouge">--allow-unrelated-histories</code> flag worked with pull request in this way</p>

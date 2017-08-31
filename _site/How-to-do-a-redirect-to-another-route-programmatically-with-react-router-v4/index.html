@@ -1,0 +1,58 @@
+<h3 id="how-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4">How to do a redirect to another route programmatically with react-router v4.</h3>
+
+<h4 id="headerjs">Header.js</h4>
+<h4 id="first-of-all-just-import-withrouter-with-thisyou-can-get-access-to-the-history-objects-properties-and-the-closest-s-match-via-the-withrouter-higher-order-component-withrouter-will-re-render-its-component-every-time-the-route-changes-with-the-same-props-as--render-props--match-location-history-">first of all just import withRouter, with this,You can get access to the history object’s properties and the closest <Route>'s match via the withRouter higher-order component. withRouter will re-render its component every time the route changes with the same props as <Route> render props: { match, location, history }.</Route></Route></h4>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">// ....</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">withRouter</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'react-router'</span>
+
+<span class="kr">class</span> <span class="nx">Header</span> <span class="kr">extends</span> <span class="nx">Component</span> <span class="p">{</span>
+  <span class="nx">functionMethod</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// then push you path into history.</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">props</span><span class="p">.</span><span class="nx">history</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span> <span class="s2">"/path"</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="c1">// export component by invoke withRouter.</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">withRouter</span><span class="p">(</span><span class="nx">Header</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h4 id="and-for-navigator-which-normally-used-as-public-component-and-it-not-rendered-by--you-need-use-createbrowserhistory-to-create-history-object-for-it-consider-following-example">And for Navigator which normally used as public component and it not rendered by <Route></Route> you need use createBrowserHistory to create history object for it. Consider following example.</h4>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">//Routers.js</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">createBrowserHistory</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">'history'</span><span class="p">;</span>
+<span class="c1">// import createBrowserHistory to create react history object for header component</span>
+<span class="kr">const</span> <span class="nx">history</span> <span class="o">=</span> <span class="nx">createBrowserHistory</span><span class="p">();</span>
+<span class="c1">// ...</span>
+<span class="kr">class</span> <span class="nx">Routers</span> <span class="kr">extends</span> <span class="nx">Component</span><span class="p">{</span>
+  <span class="nx">render</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">(</span>
+
+    <span class="o">&lt;</span><span class="nx">BrowserRouter</span>  <span class="nx">basename</span><span class="o">=</span><span class="s2">"/platform"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">Header</span> <span class="nx">history</span><span class="o">=</span><span class="p">{</span><span class="nx">history</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="sr">/Header</span><span class="err">&gt;
+</span>        <span class="c1">// set history as Header.js's props without createBrowserHistory you will not able to access history here.</span>
+
+        <span class="o">&lt;</span><span class="nx">Switch</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">Route</span>
+                <span class="nx">path</span><span class="o">=</span><span class="p">{</span><span class="s2">"/bom"</span><span class="p">}</span>
+                <span class="nx">children</span><span class="o">=</span><span class="p">{({</span><span class="nx">history</span><span class="p">})</span> <span class="o">=&gt;</span> <span class="p">(</span>
+                  <span class="o">&lt;</span><span class="nx">Bom</span> <span class="nx">history</span><span class="o">=</span><span class="p">{</span><span class="nx">history</span><span class="p">}</span><span class="o">&gt;&lt;</span><span class="sr">/Bom</span><span class="err">&gt;
+</span>                <span class="p">)}</span>
+            <span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="sr">/Route</span><span class="err">&gt;
+</span>            <span class="c1">// ....</span>
+            <span class="o">&lt;</span><span class="sr">/Switch</span><span class="err">&gt;
+</span>            <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>        <span class="o">&lt;</span><span class="sr">/BrowserRouter</span><span class="err">&gt;
+</span>    <span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// ...</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Routers</span><span class="p">;</span>
+
+</code></pre>
+</div>

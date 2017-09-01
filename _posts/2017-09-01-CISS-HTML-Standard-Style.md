@@ -1,3 +1,7 @@
+---
+layout : single
+---
+
 ### Doctype
 
 Always use the minimal, versionless doctype.

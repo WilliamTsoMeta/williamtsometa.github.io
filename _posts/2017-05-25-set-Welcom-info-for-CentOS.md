@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 ---
 
 ### set Welcom info for centos

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 ---
 
 # set-existsing-folder-point-to-remote-git

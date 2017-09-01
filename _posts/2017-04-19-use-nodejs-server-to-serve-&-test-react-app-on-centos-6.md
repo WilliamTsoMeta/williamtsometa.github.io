@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 ---
 
 https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/

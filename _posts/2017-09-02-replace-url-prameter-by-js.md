@@ -1,3 +1,7 @@
+---
+layout : single
+---
+
 ```js
 var url  = 'www.something.com?some_parameter_name=old_parameter_value&';
 

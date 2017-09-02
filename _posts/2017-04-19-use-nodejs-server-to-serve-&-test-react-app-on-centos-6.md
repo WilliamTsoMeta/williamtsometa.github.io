@@ -1,7 +1,16 @@
 ---
-layout: single
+layout : single
+excerpt: ""
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+tags:
+  - CSS
+  - JS
+  - HTML
 ---
-
 https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
 https://expressjs.com/en/starter/installing.html
 

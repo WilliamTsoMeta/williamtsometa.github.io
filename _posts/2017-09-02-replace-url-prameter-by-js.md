@@ -6,8 +6,10 @@ read_time: true
 comments: true
 share: true
 related: true
-header:
-  overlay_image: /assets/images/sebastien-gabriel-13688.jpg
+tags:
+  - CSS
+  - JS
+  - HTML
 ---
 
 ```js

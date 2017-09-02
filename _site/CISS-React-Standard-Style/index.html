@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="React Style Guide">
+<meta name="description" content="All about web development">
 
 
 
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="og:description" content="React Style Guide">
+  <meta property="og:description" content="All about web development">
 
 
 
@@ -180,10 +180,124 @@
 
 <div id="main" role="main">
   
+  <div class="sidebar sticky">
+  
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name" itemprop="name">William Vit</h3>
+    
+      <p class="author__bio" itemprop="description">
+        Full-stack developer
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Beijing</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:vitalitymailg@gmail.com">
+            <meta itemprop="email" content="vitalitymailg@gmail.com" />
+            <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.facebook.com/vitalitymail" itemprop="sameAs">
+            <i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook
+          </a>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/william-tso-2708a599" itemprop="sameAs">
+            <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/williamvittso" itemprop="sameAs">
+            <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Ciss React Standard Style">
-    <meta itemprop="description" content="React Style Guide">
+    <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="September 01, 2017">
     
 
@@ -192,6 +306,14 @@
         <header>
           <h1 class="page__title" itemprop="headline">Ciss React Standard Style
 </h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
           
         </header>
       
@@ -398,6 +520,33 @@ React希望以小写字符开头的元素是内置的HTML元素，如果您的�
       <footer class="page__meta">
         
         
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#css" class="page__taxonomy-item" rel="tag">CSS</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#html" class="page__taxonomy-item" rel="tag">HTML</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#js" class="page__taxonomy-item" rel="tag">JS</a>
+    
+    </span>
+  </p>
+
+
 
 
         
@@ -405,7 +554,20 @@ React希望以小写字符开头的元素是内置的HTML元素，如果您的�
         
       </footer>
 
-      
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Ciss+React+Standard+Style%20http%3A%2F%2Flocalhost%3A4000%2FCISS-React-Standard-Style%2F" class="btn btn--twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FCISS-React-Standard-Style%2F" class="btn btn--facebook" title="Share on Facebook"><i class="fa fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2FCISS-React-Standard-Style%2F" class="btn btn--google-plus" title="Share on Google Plus"><i class="fa fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FCISS-React-Standard-Style%2F" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fa fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
 
       
   <nav class="pagination">
@@ -485,6 +647,100 @@ React希望以小写字符开头的元素是内置的HTML元素，如果您的�
   </article>
 
   
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/replace-url-prameter-by-js/" rel="permalink">Replace Url Prameter By Js
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">replace url prameter by js
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/CISS-JavaScript-Standard-Style/" rel="permalink">Ciss Javascript Standard Style
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">JavaScript Standard Style
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/CISS-HTML-Standard-Style/" rel="permalink">Ciss Html Standard Style
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">Doctype
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/" rel="permalink">How to do a redirect to another route programmatically with react Router v4
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to do a redirect to another route programmatically with react-router v4.
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
   
 </div>
 

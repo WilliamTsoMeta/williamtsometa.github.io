@@ -1,988 +1,1024 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-02T19:53:29+08:00</updated><id>http://localhost:4000/</id><title type="html">William Vit</title><subtitle>All about web development</subtitle><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><entry><title type="html">Replace Url Prameter By Js</title><link href="http://localhost:4000/replace-url-prameter-by-js/" rel="alternate" type="text/html" title="Replace Url Prameter By Js" /><published>2017-09-02T00:00:00+08:00</published><updated>2017-09-02T00:00:00+08:00</updated><id>http://localhost:4000/replace-url-prameter-by-js</id><content type="html" xml:base="http://localhost:4000/replace-url-prameter-by-js/">```js
-var url  = 'www.something.com?some_parameter_name=old_parameter_value&amp;';
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-02T20:35:42+08:00</updated><id>http://localhost:4000/</id><title type="html">William Vit</title><subtitle>All about web development</subtitle><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><entry><title type="html">Replace Url Prameter By Js</title><link href="http://localhost:4000/replace-url-prameter-by-js/" rel="alternate" type="text/html" title="Replace Url Prameter By Js" /><published>2017-09-02T00:00:00+08:00</published><updated>2017-09-02T00:00:00+08:00</updated><id>http://localhost:4000/replace-url-prameter-by-js</id><content type="html" xml:base="http://localhost:4000/replace-url-prameter-by-js/">&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.something.com?some_parameter_name=old_parameter_value&amp;amp;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-var parameter_name = 'name=';
-var url_regex = new RegExp(parameter_name + '[^&amp;]+' + '&amp;');
-var old_par = url_regex.exec(url);
-var = new_par = 'new_parameter_name=new_parameter_value';
-url = url.replace(old_par,new_par);
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parameter_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'name='&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url_regex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parameter_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'[^&amp;amp;]+'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;amp;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;old_par&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url_regex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;new_par&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'new_parameter_name=new_parameter_value'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;old_par&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;new_par&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-// chop/slice/trim off last character(&amp; symbol) in string for possibly  use.
+&lt;span class=&quot;c1&quot;&gt;// chop/slice/trim off last character(&amp;amp; symbol) in string for possibly  use.&lt;/span&gt;
 
-var str = &quot;12345.00&quot;;
-str = str.substring(0, str.length - 1);
-// but the slice syntax is much clearer
-var str = &quot;12345.00&quot;;
-str = str.slice(0, -1);
-```</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">replace url prameter by js</summary></entry><entry><title type="html">Ciss React Standard Style</title><link href="http://localhost:4000/CISS-React-Standard-Style/" rel="alternate" type="text/html" title="Ciss React Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-React-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-React-Standard-Style/"># React Style Guide
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;12345.00&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;substring&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// but the slice syntax is much clearer&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;12345.00&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">replace url prameter by js</summary></entry><entry><title type="html">Ciss React Standard Style</title><link href="http://localhost:4000/CISS-React-Standard-Style/" rel="alternate" type="text/html" title="Ciss React Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-React-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-React-Standard-Style/">&lt;h1 id=&quot;react-style-guide&quot;&gt;React Style Guide&lt;/h1&gt;
 
-# jQuery
+&lt;h1 id=&quot;jquery&quot;&gt;jQuery&lt;/h1&gt;
 
-* __In general, avoid using jQuery within React components.__
-* __Never use jQuery in a component for DOM manipulation.__
-* __Performing ajax with jQuery in your component is fine.__
-* __If you're using a jQuery plugin, consider encapsulating the use of the plugin in its own component so that you only have to manage it in a single place.__
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;In general, avoid using jQuery within React components.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Never use jQuery in a component for DOM manipulation.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performing ajax with jQuery in your component is fine.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;If you’re using a jQuery plugin, consider encapsulating the use of the plugin in its own component so that you only have to manage it in a single place.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;尽量避免在React组件中使用jQuery。&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;绝不在组件中使用jQuery进行DOM操作。&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;执行 ajax与jQuery在你的组件是允许的.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;如果您正在使用jQuery插件，请考虑将插件的使用封装在自己的组件中，以便只需在单个位置进行管理。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
+&lt;p&gt;Based on the styles recommended from:  &lt;br /&gt;
+&lt;strong&gt;根据以下推荐的风格编辑：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://github.com/Khan/style-guides/blob/master/style/react.md&lt;/li&gt;
+  &lt;li&gt;https://reactjsnews.com/react-style-guide-patterns-i-like/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://reactjs-training.com/&quot;&gt;React.js Training&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ryanflorence&quot;&gt;Ryan Florence&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/mjackson&quot;&gt;Michael Jackson&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-* __尽量避免在React组件中使用jQuery。__
-* __绝不在组件中使用jQuery进行DOM操作。__
-* __执行 ajax与jQuery在你的组件是允许的.__
-* __如果您正在使用jQuery插件，请考虑将插件的使用封装在自己的组件中，以便只需在单个位置进行管理。__
+&lt;h1 id=&quot;classes&quot;&gt;Classes&lt;/h1&gt;
 
-#### Sources
-Based on the styles recommended from:    
-__根据以下推荐的风格编辑：__
-1. https://github.com/Khan/style-guides/blob/master/style/react.md
-2. https://reactjsnews.com/react-style-guide-patterns-i-like/
-3. [React.js Training](https://reactjs-training.com/) by [Ryan Florence](https://twitter.com/ryanflorence) and [Michael Jackson](https://twitter.com/mjackson)
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Component class names should always begin with an upper case character. React expects elements starting with a lower case character to be built-in HTML elements and will throw an error if your component starts with one.&lt;br /&gt;
+&lt;strong&gt;组件类名应始终以大写字母开头。
+React希望以小写字符开头的元素是内置的HTML元素，如果您的组件以一个小写字母开头，则会抛出错误。&lt;/strong&gt;&lt;/p&gt;
 
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Bad&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 
-# Classes
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Members should be in the following order:
+    &lt;ol&gt;
+      &lt;li&gt;Lifecycle methods in order of occurrence&lt;/li&gt;
+      &lt;li&gt;Implementation methods&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;定义方法的顺序如下&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;constructor&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;内置生命周期方法&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;自定义方法&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ol&gt;
 
-* Component class names should always begin with an upper case character. React expects elements starting with a lower case character to be built-in HTML elements and will throw an error if your component starts with one.  
-__组件类名应始终以大写字母开头。
-React希望以小写字符开头的元素是内置的HTML元素，如果您的组件以一个小写字母开头，则会抛出错误。__
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;                
+      &lt;span class=&quot;na&quot;&gt;componentWillMount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;componentWillUnmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;_myMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method should always be last - this way you can easily find it by scrolling to the bottom of the file.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;方法应该是最后一个 - 这样你可以通过滚动到文件的底部轻松的找到它。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Prefix custom methods and event handlers with an underscore.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;使用下划线修饰自定义方法和事件处理程序。&lt;/strong&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_handleButtonClick: function () {},&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Event handlers should be named &lt;code class=&quot;highlighter-rouge&quot;&gt;_handle{EventName}&lt;/code&gt;. Props that pass event handlers should be named &lt;code class=&quot;highlighter-rouge&quot;&gt;on{EventName}&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;自定义事件处理程序应该被命名为&lt;code class=&quot;highlighter-rouge&quot;&gt;_handle{EventName}&lt;/code&gt;。 传递事件处理程序的 props 应该命名为“on{EventName}”。例如：&lt;/strong&gt;&lt;/p&gt;
 
-    ```js
-    // Bad
-    var myComponent = React.createClass({ /* ... */ });
-
-    // Good
-    var MyComponent = React.createClass({ /* ... */ });
-    ```
-
-* Members should be in the following order:
-    1. Lifecycle methods in order of occurrence
-    2. Implementation methods
-    3. `render`
-
-
-* __定义方法的顺序如下__
-  1. __constructor__
-  2. __内置生命周期方法__
-  3. __自定义方法__
-  4. __`render`__
-
-    ```js
-    const Foo = React.createClass({                
-        componentWillMount: function () {},
-        componentWillUnmount: function () {},
-        _handleButtonClick: function () {},
-        _myMethod: function () {},
-        render: function () {}
-    });
-    ```
-
-* The `render` method should always be last - this way you can easily find it by scrolling to the bottom of the file.  
-* __`render`方法应该是最后一个 - 这样你可以通过滚动到文件的底部轻松的找到它。__
-
-* Prefix custom methods and event handlers with an underscore.
-* __使用下划线修饰自定义方法和事件处理程序。__
-`_handleButtonClick: function () {},`
-
-* Event handlers should be named `_handle{EventName}`. Props that pass event handlers should be named `on{EventName}`.
-* __自定义事件处理程序应该被命名为`_handle{EventName}`。 传递事件处理程序的 props 应该命名为“on{EventName}”。例如：__
-
-    ```js
-    _handleButtonClick: function (e) { /* ... */ }
-    ```
-
-    ```js
-    &lt;Foo onButtonClick={this._handleButtonClick} /&gt;
-    ```
-
-* The element returned by the `render` method should have a `className` matching the name of the component (or otherwise identifying the component). This is useful for &quot;namespacing&quot; any CSS/LESS that go with the component. For example:
-* __`render`方法返回的元素应该有一个`类名`匹配组件的名称（或以其他方式标识组件）。 对任何使用CSS/LESS“命名空间”的组件是有用的。 例如：__
-
-    ```js
-    // Foobar.js
-    import React from 'react';
-    import 'Foobar.less';
-
-    const Foobar = React.createClass({
-        render: function () {
-            return &lt;div className=&quot;foobar&quot;&gt;
-                Foobar
-            &lt;/div&gt;;
-        }
-    });
-
-    export default Foobar;
-    ```
-
-    ```less
-    // Foobar.less
-    .foobar {
-        // Rules defined here will only apply to Foobar elements
-    }
-    ```
-
-# JSX
-
-* Align props when you can't fit them all on a single line. The ending &quot;&gt;&quot; of the opening tag should go on its own line. This makes it clearly visible where the opening tag ends and the element's children begin.
-* __当您无法将其全部放在一行上时，将props对齐。 开始标签的结尾“&gt;”应该另起一行。 以便分辨开始标签和子元素。__
-    ```js
-    // Bad
-    &lt;div className=&quot;foo-container&quot;
-        data-bar=&quot;some value&quot;&gt;
-        { /* ... */ }
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nx&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    // Good
-    &lt;div className=&quot;foo-container&quot; data-bar=&quot;some value&quot;&gt;
-        { /* ... */ }
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onButtonClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The element returned by the &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method should have a &lt;code class=&quot;highlighter-rouge&quot;&gt;className&lt;/code&gt; matching the name of the component (or otherwise identifying the component). This is useful for “namespacing” any CSS/LESS that go with the component. For example:&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;方法返回的元素应该有一个&lt;code class=&quot;highlighter-rouge&quot;&gt;类名&lt;/code&gt;匹配组件的名称（或以其他方式标识组件）。 对任何使用CSS/LESS“命名空间”的组件是有用的。 例如：&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Foobar.js&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Foobar.less'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foobar&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+  &lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    // Good
-    &lt;div
-        className=&quot;foo-container&quot;
-        data-bar=&quot;some value&quot;
-    &gt;
-        { /* ... */ }
+    &lt;pre&gt;&lt;code class=&quot;language-less&quot;&gt;  // Foobar.less
+  .foobar {
+      // Rules defined here will only apply to Foobar elements
+  }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;jsx&quot;&gt;JSX&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Align props when you can’t fit them all on a single line. The ending “&amp;gt;” of the opening tag should go on its own line. This makes it clearly visible where the opening tag ends and the element’s children begin.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;当您无法将其全部放在一行上时，将props对齐。 开始标签的结尾“&amp;gt;”应该另起一行。 以便分辨开始标签和子元素。&lt;/strong&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Bad&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
-    ```
+  &lt;/li&gt;
+  &lt;li&gt;Open elements that span multiple lines on the same line. This conserves space because it requires one fewer tab and also saves a couple of lines.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;打开同一行上跨多行的元素。 这节省了空间，因为它需要更少的缩进。&lt;/strong&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// OK...&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-* Open elements that span multiple lines on the same line. This conserves space because it requires one fewer tab and also saves a couple of lines.
-* __打开同一行上跨多行的元素。 这节省了空间，因为它需要更少的缩进。__
-    ```js
-    // OK...
-    var multilineJsx = (
-        &lt;div&gt;
-            { /* ... */ }
-        &lt;/div&gt;
-    );
+  &lt;span class=&quot;c1&quot;&gt;// Better&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Better&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;really very long class&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;reallyReallyReallyLongId&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some important value&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Variables holding a JSX object can stay on one line if it is short enough.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;变量可以保持JSX元素在一行内。&lt;/strong&gt;&lt;/p&gt;
 
-    // Better
-    var multilineJsx = &lt;div&gt;
-        { /* ... */ }
-    &lt;/div&gt;;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;singleLineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;My&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When rendering a list of components from an array, do it inline if it makes sense. If the map function is too long or complicated, consider extracting it out into its own method on the component class.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;当从数组中渲染列表时将其内联。 如果 map 函数太长或复杂，请考虑将其提取为独立组件。&lt;/strong&gt;&lt;/p&gt;
 
-    // Better
-    var multilineJsx = &lt;div
-        className=&quot;really very long class&quot;
-        id=&quot;reallyReallyReallyLongId&quot;
-        data-foo=&quot;some important value&quot;
-    &gt;
-        { /* ... */ }
-    &lt;/div&gt;;
-    ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/li&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ul&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// or with ES6&lt;/span&gt;
 
-* Variables holding a JSX object can stay on one line if it is short enough.
-* __变量可以保持JSX元素在一行内。__
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/li&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}
+&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ul&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">React Style Guide</summary></entry><entry><title type="html">Ciss Javascript Standard Style</title><link href="http://localhost:4000/CISS-JavaScript-Standard-Style/" rel="alternate" type="text/html" title="Ciss Javascript Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-JavaScript-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-JavaScript-Standard-Style/">&lt;h1 id=&quot;javascript-standard-style&quot;&gt;JavaScript Standard Style&lt;/h1&gt;
 
-    ```js
-    var singleLineJsx = &lt;h1&gt;My header&lt;/h1&gt;;
-    ```
+&lt;p&gt;&lt;a href=&quot;https://github.com/feross/standard&quot;&gt;&lt;img src=&quot;https://cdn.rawgit.com/feross/standard/master/badge.svg&quot; alt=&quot;js-standard-style&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-* When rendering a list of components from an array, do it inline if it makes sense. If the map function is too long or complicated, consider extracting it out into its own method on the component class.
-* __当从数组中渲染列表时将其内联。 如果 map 函数太长或复杂，请考虑将其提取为独立组件。__
+&lt;p&gt;This is a TL;DR of the &lt;a href=&quot;https://github.com/feross/standard&quot;&gt;standard&lt;/a&gt; JavaScript
+rules.&lt;/p&gt;
 
-    ```js
-    &lt;ul&gt;
-        {items.map(function (item, i) {
-            return &lt;li key={i}&gt;{item}&lt;/li&gt;;
-        )}
-    &lt;/ul&gt;;
+&lt;p&gt;The best way to learn about &lt;code class=&quot;highlighter-rouge&quot;&gt;standard&lt;/code&gt; is to just install it and give it a try on
+your code.&lt;/p&gt;
 
-    // or with ES6
+&lt;p&gt;这是 JavaScript standard 代码规范的全文。&lt;/p&gt;
 
-    &lt;ul&gt;
-        {items.map((item, i) =&gt; &lt;li key={i}&gt;{item}&lt;/li&gt;)}
-    &lt;/ul&gt;;
-    ```</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">React Style Guide</summary></entry><entry><title type="html">Ciss Javascript Standard Style</title><link href="http://localhost:4000/CISS-JavaScript-Standard-Style/" rel="alternate" type="text/html" title="Ciss Javascript Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-JavaScript-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-JavaScript-Standard-Style/"># JavaScript Standard Style
+&lt;p&gt;掌握本规范的最好方法是安装并在自己的代码中使用它。&lt;/p&gt;
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+&lt;h2 id=&quot;rules-细则&quot;&gt;Rules 细则&lt;/h2&gt;
 
-This is a TL;DR of the [standard](https://github.com/feross/standard) JavaScript
-rules.
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Use 2 spaces&lt;/strong&gt; for indentation. 使用两个空格进行缩进。&lt;/p&gt;
 
-The best way to learn about `standard` is to just install it and give it a try on
-your code.
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hi'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Use single quotes for strings&lt;/strong&gt; except to avoid escaping. 除需要转义的情况外，字符串统一使用单引号。&lt;/p&gt;
 
-这是 JavaScript standard 代码规范的全文。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hello there'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;div class='box'&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;No unused variables.不要定义未使用的变量。&lt;/strong&gt;&lt;/p&gt;
 
-掌握本规范的最好方法是安装并在自己的代码中使用它。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add a space after keywords.关键字后面加空格。&lt;/strong&gt;&lt;/p&gt;
 
-## Rules 细则
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add a space before a function declaration’s parentheses.函数声明时括号与函数名间加空格。&lt;/strong&gt;&lt;/p&gt;
 
-* **Use 2 spaces** for indentation. 使用两个空格进行缩进。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
 
-  ```js
-  function hello (name) {
-    console.log('hi', name)
-  }
-  ```
+&lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;       &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Always use&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;===&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;.&lt;br /&gt;
+Exception: &lt;code class=&quot;highlighter-rouge&quot;&gt;obj == null&lt;/code&gt; is allowed to check for &lt;code class=&quot;highlighter-rouge&quot;&gt;null || undefined&lt;/code&gt;.&lt;br /&gt;
+始终使用 === 替代 ==。
+例外： obj == null 可以用来检查 null || undefined。&lt;/p&gt;
 
-* **Use single quotes for strings** except to avoid escaping. 除需要转义的情况外，字符串统一使用单引号。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  console.log('hello there')
-  $(&quot;&lt;div class='box'&gt;&quot;)
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'John'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Infix operators&lt;/strong&gt; must be spaced.&lt;br /&gt;
+字符串拼接操作符 (Infix operators) 之间要留空格。&lt;/p&gt;
 
-* **No unused variables.不要定义未使用的变量。**
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'hello, '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'!'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  function myFunction () {
-    var result = something()   // ✗ avoid
-  }
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'hello, '&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'!'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Commas should have a space&lt;/strong&gt; after them.&lt;br /&gt;
+逗号后面加空格。&lt;/p&gt;
 
-* **Add a space after keywords.关键字后面加空格。**
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  if (condition) { ... }   // ✓ ok
-  if(condition) { ... }    // ✗ avoid
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;list&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;greet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Keep else statements&lt;/strong&gt; on the same line as their curly braces.&lt;br /&gt;
+else 关键字要与花括号保持在同一行。&lt;/p&gt;
 
-* **Add a space before a function declaration's parentheses.函数声明时括号与函数名间加空格。**
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  function name (arg) { ... }   // ✓ ok
-  function name(arg) { ... }    // ✗ avoid
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;For multi-line if statements,&lt;/strong&gt; use curly braces.&lt;br /&gt;
+多行 if 语句的的括号不能省。&lt;/p&gt;
 
-  run(function () { ... })      // ✓ ok
-  run(function() { ... })       // ✗ avoid
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;quiet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-* **Always use** `===` instead of `==`.&lt;br&gt;
-  Exception: `obj == null` is allowed to check for `null || undefined`.  
-  始终使用 === 替代 ==。
-例外： obj == null 可以用来检查 null || undefined。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;quiet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  if (name === 'John')   // ✓ ok
-  if (name == 'John')    // ✗ avoid
-  ```
-
-  ```js
-  if (name !== 'John')   // ✓ ok
-  if (name != 'John')    // ✗ avoid
-  ```
-
-* **Infix operators** must be spaced.  
-字符串拼接操作符 (Infix operators) 之间要留空格。
-
-  ```js
-  // ✓ ok
-  var x = 2
-  var message = 'hello, ' + name + '!'
-  ```
-
-  ```js
-  // ✗ avoid
-  var x=2
-  var message = 'hello, '+name+'!'
-  ```
-
-* **Commas should have a space** after them.  
-逗号后面加空格。
-
-  ```js
-  // ✓ ok
-  var list = [1, 2, 3, 4]
-  function greet (name, options) { ... }
-  ```
-
-  ```js
-  // ✗ avoid
-  var list = [1,2,3,4]
-  function greet (name,options) { ... }
-  ```
-
-* **Keep else statements** on the same line as their curly braces.  
-else 关键字要与花括号保持在同一行。
-
-  ```js
-  // ✓ ok
-  if (condition) {
-    // ...
-  } else {
-    // ...
-  }
-  ```
-
-  ```js
-  // ✗ avoid
-  if (condition) {
-    // ...
-  }
-  else {
-    // ...
-  }
-  ```
-
-* **For multi-line if statements,** use curly braces.  
-多行 if 语句的的括号不能省。
-
-  ```js
-  // ✓ ok
-  if (options.quiet !== true) console.log('done')
-  ```
-
-  ```js
-  // ✓ ok
-  if (options.quiet !== true) {
-    console.log('done')
-  }
-  ```
-
-  ```js
-  // ✗ avoid
-  if (options.quiet !== true)
-    console.log('done')
-  ```
-
-* **Always handle the** `err` function parameter.  
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;quiet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Always handle the&lt;/strong&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;err&lt;/code&gt; function parameter.&lt;br /&gt;
 不要丢掉异常处理中err参数。
-  ```js
-  // ✓ ok
-  run(function (err) {
-    if (err) throw err
-    window.alert('done')
-  })
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  // ✗ avoid
-  run(function (err) {
-    window.alert('done')
-  })
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'done'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Declare browser globals&lt;/strong&gt; with a &lt;code class=&quot;highlighter-rouge&quot;&gt;/* global */&lt;/code&gt; comment.&lt;br /&gt;
+Exceptions are: &lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;document&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;navigator&lt;/code&gt;.&lt;br /&gt;
+Prevents accidental use of poorly-named browser globals like &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;length&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;event&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;.&lt;br /&gt;
+声明全局对象时用/* global */注释。&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;document&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;navigator&lt;/code&gt;除外。&lt;br /&gt;
+不使用名称不正确的浏览器全局对象，&lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;length&lt;/code&gt;,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;event&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt;.
+如下所示：&lt;/p&gt;
 
-* **Declare browser globals** with a `/* global */` comment.&lt;br&gt;
-  Exceptions are: `window`, `document` and `navigator`.&lt;br&gt;
-  Prevents accidental use of poorly-named browser globals like `open`, `length`,
-  `event`, and `name`.  
-  声明全局对象时用/* global */注释。  
-  `window`, `document` and `navigator`除外。  
-  不使用名称不正确的浏览器全局对象，`open`, `length`,
-  `event`, and `name`.
-  如下所示：  
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/* global alert, prompt */&lt;/span&gt;
 
-  ```js
-  /* global alert, prompt */
+&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hi'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;prompt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ok?'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  alert('hi')
-  prompt('ok?')
-  ```
+    &lt;p&gt;Explicitly referencing the function or property on &lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt; is okay too, though
+such code will not run in a Worker which uses &lt;code class=&quot;highlighter-rouge&quot;&gt;self&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;window&lt;/code&gt;.&lt;br /&gt;
+使用浏览器全局变量时加上 window. 前缀。如果代码不在浏览器中工作则用self 代替。&lt;/p&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hi'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Multiple blank lines not allowed.不允许有连续多行空行。&lt;/strong&gt;&lt;/p&gt;
 
-  Explicitly referencing the function or property on `window` is okay too, though
-  such code will not run in a Worker which uses `self` instead of `window`.  
-  使用浏览器全局变量时加上 window. 前缀。如果代码不在浏览器中工作则用self 代替。
-  ```js
-  window.alert('hi')   // ✓ ok
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'hello world'&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-* **Multiple blank lines not allowed.不允许有连续多行空行。**
-
-
-  ```js
-  // ✓ ok
-  var value = 'hello world'
-  console.log(value)
-  ```
-
-  ```js
-  // ✗ avoid
-  var value = 'hello world'
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'hello world'&lt;/span&gt;
 
 
-  console.log(value)
-  ```
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;For the ternary operator&lt;/strong&gt; in a multi-line setting, place &lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; on their own lines.&lt;br /&gt;
+对于三元运算符 ? 和 : 与他们所负责的代码处于同一行&lt;/p&gt;
 
-* **For the ternary operator** in a multi-line setting, place `?` and `:` on their own lines.  
-  对于三元运算符 ? 和 : 与他们所负责的代码处于同一行
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;development&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'localhost'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.api.com'&lt;/span&gt;
 
-  ```js
-  // ✓ ok
-  var location = env.development ? 'localhost' : 'www.api.com'
+&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;development&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'localhost'&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.api.com'&lt;/span&gt;
 
-  // ✓ ok
-  var location = env.development
-    ? 'localhost'
-    : 'www.api.com'
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;development&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;'localhost'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;'www.api.com'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;For var declarations,&lt;/strong&gt; write each declaration in its own statement.&lt;br /&gt;
+每个 var 关键字单独声明一个变量。&lt;/p&gt;
 
-  // ✗ avoid
-  var location = env.development ?
-    'localhost' :
-    'www.api.com'
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;silent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verbose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 
-* **For var declarations,** write each declaration in its own statement.  
-每个 var 关键字单独声明一个变量。
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;silent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;verbose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
 
-  ```js
-  // ✓ ok
-  var silent = true
-  var verbose = true
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;silent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;verbose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Wrap conditional assignments&lt;/strong&gt; with additional parentheses. This makes it clear that the expression is intentionally an assignment (&lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt;) rather than a typo for equality (&lt;code class=&quot;highlighter-rouge&quot;&gt;===&lt;/code&gt;).&lt;br /&gt;
+条件语句中赋值语句使用括号包起来。这样使得代码更加清晰可读，而不会认为是将条件判断语句的全等号（===）错写成了等号（=）。&lt;/p&gt;
 
-  // ✗ avoid
-  var silent = true, verbose = true
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-  // ✗ avoid
-  var silent = true,
-      verbose = true
-  ```
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;m&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-* **Wrap conditional assignments** with additional parentheses. This makes it clear that the expression is intentionally an assignment (`=`) rather than a typo for equality (`===`).  
-条件语句中赋值语句使用括号包起来。这样使得代码更加清晰可读，而不会认为是将条件判断语句的全等号（===）错写成了等号（=）。
+    &lt;p&gt;单行代码块两边加空格。&lt;/p&gt;
 
-  ```js
-  // ✓ ok
-  while ((m = text.match(expr))) {
-    // ...
-  }
+    &lt;p&gt;eslint: block-spacing&lt;/p&gt;
 
-  // ✗ avoid
-  while (m = text.match(expr)) {
-    // ...
-  }
-  ```
+    &lt;p&gt;function foo () {return true}    // ✗ avoid
+  function foo () { return true }  // ✓ ok&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-  单行代码块两边加空格。
+&lt;p&gt;*&lt;/p&gt;
+&lt;h2 id=&quot;semicolons&quot;&gt;Semicolons&lt;/h2&gt;
 
-  eslint: block-spacing
-
-    function foo () {return true}    // ✗ avoid
-    function foo () { return true }  // ✓ ok
-
-*
-## Semicolons
-
-* No semicolons. (see: [1](http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding), [2](http://inimino.org/%7Einimino/blog/javascript_semicolons), [3](https://www.youtube.com/watch?v=gsfbh17Ax9I))
+&lt;ul&gt;
+  &lt;li&gt;No semicolons. (see: &lt;a href=&quot;http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding&quot;&gt;1&lt;/a&gt;, &lt;a href=&quot;http://inimino.org/%7Einimino/blog/javascript_semicolons&quot;&gt;2&lt;/a&gt;, &lt;a href=&quot;https://www.youtube.com/watch?v=gsfbh17Ax9I&quot;&gt;3&lt;/a&gt;)
 不要使用分号
-  ```js
-  window.alert('hi')   // ✓ ok
-  window.alert('hi');  // ✗ avoid
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hi'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'hi'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Never start a line with &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt;. This is the only gotcha with omitting semicolons, and standard protects you from this potential issue.
+不使用分号的项目中，不要以&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;`&lt;/code&gt; 开头。而用分号开头
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ok'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}())&lt;/span&gt;
 
-* Never start a line with `(`, `[`, or `` ` ``. This is the only gotcha with omitting semicolons, and standard protects you from this potential issue.
-不使用分号的项目中，不要以`(`, `[`, or `` ` `` 开头。而用分号开头
-  ```js
-  // ✓ ok
-  ;(function () {
-    window.alert('ok')
-  }())
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ok'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  // ✗ avoid
-  (function () {
-    window.alert('ok')
-  }())
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-  ```js
-  // ✓ ok
-  ;[1, 2, 3].forEach(bar)
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  // ✗ avoid
-  [1, 2, 3].forEach(bar)
-  ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ✓ ok&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'o'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-  ```js
-  // ✓ ok
-  ;`hello`.indexOf('o')
+&lt;span class=&quot;c1&quot;&gt;// ✗ avoid&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'o'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  // ✗ avoid
-  `hello`.indexOf('o')
-  ```
+    &lt;p&gt;Note: If you’re often writing code like this, you may be trying to be too clever.&lt;/p&gt;
 
-  Note: If you're often writing code like this, you may be trying to be too clever.
+    &lt;p&gt;Clever short-hands are discouraged, in favor of clear and readable expressions, whenever
+possible.
+不鼓励使用短遍历因为会削弱可读性&lt;/p&gt;
 
-  Clever short-hands are discouraged, in favor of clear and readable expressions, whenever
-  possible.
-  不鼓励使用短遍历因为会削弱可读性
+    &lt;p&gt;Instead of this:&lt;/p&gt;
 
-  Instead of this:
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
-  ```js
-  ;[1, 2, 3].forEach(bar)
-  ```
+    &lt;p&gt;This is much preferred:
+这种遍历方式更值得鼓励。&lt;/p&gt;
 
-  This is much preferred:
-  这种遍历方式更值得鼓励。
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nums&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;nums&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-  ```js
-  var nums = [1, 2, 3]
-  nums.forEach(bar)
-  ```
+&lt;h2 id=&quot;helpful-reading-拓展阅读&quot;&gt;Helpful reading 拓展阅读&lt;/h2&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding&quot;&gt;An Open Letter to JavaScript Leaders Regarding Semicolons&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://inimino.org/~inimino/blog/javascript_semicolons&quot;&gt;JavaScript Semicolon Insertion – Everything you need to know&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-## Helpful reading 拓展阅读
+&lt;h5 id=&quot;and-a-helpful-video一个值得观看的视频&quot;&gt;And a helpful video:一个值得观看的视频：&lt;/h5&gt;
 
-- [An Open Letter to JavaScript Leaders Regarding Semicolons][1]
-- [JavaScript Semicolon Insertion – Everything you need to know][2]
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=gsfbh17Ax9I&quot;&gt;Are Semicolons Necessary in JavaScript? - YouTube&lt;/a&gt;
+JavaScript 中的分号多余吗？- YouTube&lt;/li&gt;
+&lt;/ul&gt;
 
-##### And a helpful video:一个值得观看的视频：
-
-- [Are Semicolons Necessary in JavaScript? - YouTube][3]
-JavaScript 中的分号多余吗？- YouTube
-
-All popular code minifiers in use today use AST-based minification, so they can
+&lt;p&gt;All popular code minifiers in use today use AST-based minification, so they can
 handle semicolon-less JavaScript with no issues (since semicolons are not required
-in JavaScript).
+in JavaScript).&lt;/p&gt;
 
-##### Excerpt from *[&quot;An Open Letter to JavaScript Leaders Regarding Semicolons&quot;][1]*:
+&lt;h5 id=&quot;excerpt-from-an-open-letter-to-javascript-leaders-regarding-semicolons&quot;&gt;Excerpt from &lt;em&gt;&lt;a href=&quot;http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding&quot;&gt;“An Open Letter to JavaScript Leaders Regarding Semicolons”&lt;/a&gt;&lt;/em&gt;:&lt;/h5&gt;
 
-[Relying on automatic semicolon insertion] is quite safe, and perfectly valid JS that every browser understands. Closure compiler, yuicompressor, packer, and jsmin all can properly minify it. There is no performance impact anywhere.
+&lt;p&gt;[Relying on automatic semicolon insertion] is quite safe, and perfectly valid JS that every browser understands. Closure compiler, yuicompressor, packer, and jsmin all can properly minify it. There is no performance impact anywhere.&lt;/p&gt;
 
-I am sorry that, instead of educating you, the leaders in this language community have given you lies and fear.  That was shameful. I recommend learning how statements in JS are actually terminated (and in which cases they are not terminated), so that you can write code that you find beautiful.
+&lt;p&gt;I am sorry that, instead of educating you, the leaders in this language community have given you lies and fear.  That was shameful. I recommend learning how statements in JS are actually terminated (and in which cases they are not terminated), so that you can write code that you find beautiful.&lt;/p&gt;
 
-In general, `\n` ends a statement unless:
-  1. The statement has an unclosed paren, array literal, or object literal or ends in some
-     other way that is not a valid way to end a statement. (For instance, ending with `.`
-     or `,`.)
-  2. The line is `--` or `++` (in which case it will decrement/increment the next token.)
-  3. It is a `for()`, `while()`, `do`, `if()`, or `else`, and there is no `{`
-  4. The next line starts with `[`, `(`, `+`, `*`, `/`, `-`, `,`, `.`, or some other
-     binary operator that can only be found between two tokens in a single expression.
+&lt;p&gt;In general, &lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt; ends a statement unless:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;The statement has an unclosed paren, array literal, or object literal or ends in some
+other way that is not a valid way to end a statement. (For instance, ending with &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;
+or &lt;code class=&quot;highlighter-rouge&quot;&gt;,&lt;/code&gt;.)&lt;/li&gt;
+  &lt;li&gt;The line is &lt;code class=&quot;highlighter-rouge&quot;&gt;--&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;++&lt;/code&gt; (in which case it will decrement/increment the next token.)&lt;/li&gt;
+  &lt;li&gt;It is a &lt;code class=&quot;highlighter-rouge&quot;&gt;for()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;while()&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;do&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;if()&lt;/code&gt;, or &lt;code class=&quot;highlighter-rouge&quot;&gt;else&lt;/code&gt;, and there is no &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;The next line starts with &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;,&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;, or some other
+binary operator that can only be found between two tokens in a single expression.&lt;/li&gt;
+&lt;/ol&gt;
 
-The first is pretty obvious. Even JSLint is ok with `\n` chars in JSON and parenthesized constructs, and with `var` statements that span multiple lines ending in `,`.
+&lt;p&gt;The first is pretty obvious. Even JSLint is ok with &lt;code class=&quot;highlighter-rouge&quot;&gt;\n&lt;/code&gt; chars in JSON and parenthesized constructs, and with &lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt; statements that span multiple lines ending in &lt;code class=&quot;highlighter-rouge&quot;&gt;,&lt;/code&gt;.&lt;/p&gt;
 
-The second is super weird. I’ve never seen a case (outside of these sorts of conversations) where you’d want to do write `i\n++\nj`, but, point of fact, that’s parsed as `i; ++j`, not `i++; j`.
+&lt;p&gt;The second is super weird. I’ve never seen a case (outside of these sorts of conversations) where you’d want to do write &lt;code class=&quot;highlighter-rouge&quot;&gt;i\n++\nj&lt;/code&gt;, but, point of fact, that’s parsed as &lt;code class=&quot;highlighter-rouge&quot;&gt;i; ++j&lt;/code&gt;, not &lt;code class=&quot;highlighter-rouge&quot;&gt;i++; j&lt;/code&gt;.&lt;/p&gt;
 
-The third is well understood, if generally despised. `if (x)\ny()` is equivalent to `if (x) { y() }`. The construct doesn’t end until it reaches either a block, or a statement.
+&lt;p&gt;The third is well understood, if generally despised. &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x)\ny()&lt;/code&gt; is equivalent to &lt;code class=&quot;highlighter-rouge&quot;&gt;if (x) { y() }&lt;/code&gt;. The construct doesn’t end until it reaches either a block, or a statement.&lt;/p&gt;
 
-`;` is a valid JavaScript statement, so `if(x);` is equivalent to `if(x){}` or, “If x, do nothing.” This is more commonly applied to loops where the loop check also is the update function. Unusual, but not unheard of.
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt; is a valid JavaScript statement, so &lt;code class=&quot;highlighter-rouge&quot;&gt;if(x);&lt;/code&gt; is equivalent to &lt;code class=&quot;highlighter-rouge&quot;&gt;if(x){}&lt;/code&gt; or, “If x, do nothing.” This is more commonly applied to loops where the loop check also is the update function. Unusual, but not unheard of.&lt;/p&gt;
 
-The fourth is generally the fud-inducing “oh noes, you need semicolons!” case. But, as it turns out, it’s quite easy to *prefix* those lines with semicolons if you don’t mean them to be continuations of the previous line. For example, instead of this:
-当前主流的代码压缩方案都是基于词法（AST-based）进行的，所以在处理无分号的代码时完全没有压力（何况 JavaScript 中分号本来就不是强制的）。
+&lt;p&gt;The fourth is generally the fud-inducing “oh noes, you need semicolons!” case. But, as it turns out, it’s quite easy to &lt;em&gt;prefix&lt;/em&gt; those lines with semicolons if you don’t mean them to be continuations of the previous line. For example, instead of this:
+当前主流的代码压缩方案都是基于词法（AST-based）进行的，所以在处理无分号的代码时完全没有压力（何况 JavaScript 中分号本来就不是强制的）。&lt;/p&gt;
 
-一段摘抄自 &quot;An Open Letter to JavaScript Leaders Regarding Semicolons&quot; 这篇文章的内容：
+&lt;p&gt;一段摘抄自 “An Open Letter to JavaScript Leaders Regarding Semicolons” 这篇文章的内容：&lt;/p&gt;
 
-[自动化插入分号的做法]是安全可依赖的，而且其产出的代码能够在所有浏览器里很好地运行。 Closure compiler, yuicompressor, packer 还有 jsmin 都能正确地对这样的代码进行压缩处理。并没有任何性能相关的问题。
+&lt;p&gt;[自动化插入分号的做法]是安全可依赖的，而且其产出的代码能够在所有浏览器里很好地运行。 Closure compiler, yuicompressor, packer 还有 jsmin 都能正确地对这样的代码进行压缩处理。并没有任何性能相关的问题。&lt;/p&gt;
 
-不得不说，Javascript 社区里的大牛们一直是错误的，并不能教给你最佳实践。真是让人忧伤啊。 我建议先弄清楚 JS 是怎样断句的（还有就是哪些地方看起来断了其实并没有），明白了这个后就可以随心写出漂亮的代码了。
+&lt;p&gt;不得不说，Javascript 社区里的大牛们一直是错误的，并不能教给你最佳实践。真是让人忧伤啊。 我建议先弄清楚 JS 是怎样断句的（还有就是哪些地方看起来断了其实并没有），明白了这个后就可以随心写出漂亮的代码了。&lt;/p&gt;
 
-一般来说， \n 表示语句结束，除非：
+&lt;p&gt;一般来说， \n 表示语句结束，除非：&lt;/p&gt;
 
-该语句有未闭合的括号， 数组字面量， 对象字面量 或者其他不能正常结束一条语句的情况（譬如，以 . 或 , 结尾）
-该语句是 -- 或者 ++ （它会将后面的内容进行自增或减）
+&lt;p&gt;该语句有未闭合的括号， 数组字面量， 对象字面量 或者其他不能正常结束一条语句的情况（譬如，以 . 或 , 结尾）
+该语句是 – 或者 ++ （它会将后面的内容进行自增或减）
 该语句是 for()，while()，do，if() 或者 else 并且没有 {
 下一行以 [，(，+，*，/，-，,，. 或者其他只会单独出现在两块内容间的二元操作符。
-第一条很容易理解。即使在 JSLint 中，也允许 JSON，构造器的括号中，以及使用 var 配合 , 结尾来声明多个变量等这些情中包含 \n。
+第一条很容易理解。即使在 JSLint 中，也允许 JSON，构造器的括号中，以及使用 var 配合 , 结尾来声明多个变量等这些情中包含 \n。&lt;/p&gt;
 
-第二条有点奇葩。 我还想不出谁会（除了这里用作讨论外）写出 i\n++\nj 这样的代码来，不过，顺便说一下，这种写法最后解析的结果是 i; ++j，而不是 i++; j。
+&lt;p&gt;第二条有点奇葩。 我还想不出谁会（除了这里用作讨论外）写出 i\n++\nj 这样的代码来，不过，顺便说一下，这种写法最后解析的结果是 i; ++j，而不是 i++; j。&lt;/p&gt;
 
-第三条也容易理解。 if (x)\ny() 等价于 if (x) { y() }。解释器会向下寻找到代码块或一条语句为止。
+&lt;p&gt;第三条也容易理解。 if (x)\ny() 等价于 if (x) { y() }。解释器会向下寻找到代码块或一条语句为止。&lt;/p&gt;
 
-; 是条合法的 JavaScript 语句。所以 if(x); 等价于 if(x){}，表示 “如果 x 为真，什么也不做。” 这种写法在循环里面可以看到，就是当条件判断与条件更新是同一个方法的时候。 不常见，但也不至于没听说过吧。
+&lt;p&gt;; 是条合法的 JavaScript 语句。所以 if(x); 等价于 if(x){}，表示 “如果 x 为真，什么也不做。” 这种写法在循环里面可以看到，就是当条件判断与条件更新是同一个方法的时候。 不常见，但也不至于没听说过吧。&lt;/p&gt;
 
-第四条就是常见的 “看，说过要加分号！” 的情形。但这些情况可以通过在语句前面加上分号来解决，如果你确定该语句跟前面的没关系的话。举个例子，假如你想这样：
-```js
-foo();
-[1,2,3].forEach(bar);
-```
+&lt;p&gt;第四条就是常见的 “看，说过要加分号！” 的情形。但这些情况可以通过在语句前面加上分号来解决，如果你确定该语句跟前面的没关系的话。举个例子，假如你想这样：&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-you could do this:  
-那么完全可以这样来写：
-```js
-foo()
-;[1,2,3].forEach(bar)
-```
+&lt;p&gt;you could do this:&lt;br /&gt;
+那么完全可以这样来写：&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-The advantage is that the prefixes are easier to notice, once you are accustomed to never seeing lines starting with `(` or `[` without semis.  
-后者的好处是分号比较瞩目，一旦习惯后便再也不会看到以 ( 和 [ 开头又不带分号的语句了。
+&lt;p&gt;The advantage is that the prefixes are easier to notice, once you are accustomed to never seeing lines starting with &lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; without semis.&lt;br /&gt;
+后者的好处是分号比较瞩目，一旦习惯后便再也不会看到以 ( 和 [ 开头又不带分号的语句了。&lt;/p&gt;
 
-*End quote from &quot;An Open Letter to JavaScript Leaders Regarding Semicolons&quot;.*
+&lt;p&gt;&lt;em&gt;End quote from “An Open Letter to JavaScript Leaders Regarding Semicolons”.&lt;/em&gt;&lt;/p&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">JavaScript Standard Style</summary></entry><entry><title type="html">Ciss Html Standard Style</title><link href="http://localhost:4000/CISS-HTML-Standard-Style/" rel="alternate" type="text/html" title="Ciss Html Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-HTML-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-HTML-Standard-Style/">&lt;h3 id=&quot;doctype&quot;&gt;Doctype&lt;/h3&gt;
 
-[1]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
-[2]: http://inimino.org/~inimino/blog/javascript_semicolons
-[3]: https://www.youtube.com/watch?v=gsfbh17Ax9I</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">JavaScript Standard Style</summary></entry><entry><title type="html">Ciss Html Standard Style</title><link href="http://localhost:4000/CISS-HTML-Standard-Style/" rel="alternate" type="text/html" title="Ciss Html Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-HTML-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-HTML-Standard-Style/">### Doctype
+&lt;p&gt;Always use the minimal, versionless doctype.&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Always use the minimal, versionless doctype.
-```html
-&lt;!doctype html&gt;
-```
+&lt;h3 id=&quot;encoding&quot;&gt;Encoding&lt;/h3&gt;
 
-### Encoding
+&lt;p&gt;Always define the character encoding. The encoding should be defined as early as possible. Make sure your editor uses UTF-8 as character encoding, without a byte order mark (UTF-8, no BOM). Do not specify the encoding of style sheets as these assume UTF-8.&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;More on encodings and when and how to specify them can be found in Handling character encodings in HTML and CSS&lt;/p&gt;
 
-Always define the character encoding. The encoding should be defined as early as possible. Make sure your editor uses UTF-8 as character encoding, without a byte order mark (UTF-8, no BOM). Do not specify the encoding of style sheets as these assume UTF-8.
-```html
-&lt;meta charset=&quot;utf-8&quot;&gt;
-```
-More on encodings and when and how to specify them can be found in Handling character encodings in HTML and CSS
+&lt;h3 id=&quot;capitalisation&quot;&gt;Capitalisation&lt;/h3&gt;
 
-### Capitalisation
+&lt;p&gt;All html should be lowercase; element names, attributes, attribute values (unless text/CDATA), CSS selectors, properties, and property values (with the exception of strings). Additionally, there is no need to use CDATA to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.&lt;/p&gt;
 
-All html should be lowercase; element names, attributes, attribute values (unless text/CDATA), CSS selectors, properties, and property values (with the exception of strings). Additionally, there is no need to use CDATA to escape inline JavaScript, formerly a requirement to meet XML strictness in XHTML.
+&lt;p&gt;所有html应该是小写的;元素名称，属性，属性值（除非是文本/ CDATA），CSS选择器，属性和属性值（字符串除外）。此外，不需要使用CDATA来转义内联JavaScript，以前是在XHTML中满足XML严格性的要求。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CISS.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CISS&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 
-所有html应该是小写的;元素名称，属性，属性值（除非是文本/ CDATA），CSS选择器，属性和属性值（字符串除外）。此外，不需要使用CDATA来转义内联JavaScript，以前是在XHTML中满足XML严格性的要求。
-```html
-&lt;!-- Good --&gt;
-&lt;img src=&quot;CISS.png&quot; alt=&quot;CISS&quot;&gt;
-
-&lt;!-- Bad --&gt;
-&lt;A HREF=&quot;/&quot;&gt;Home&lt;/A&gt;
-&lt;!-- Good --&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;A&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;HREF=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/A&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
 a {
     color: #a3a3a3;
 }
 
-&lt;!-- Bad --&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
 a {
     color: #A3A3A3;
 }
-```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-### Protocol
+&lt;h3 id=&quot;protocol&quot;&gt;Protocol&lt;/h3&gt;
 
-Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless they are not available over both protocols.
+&lt;p&gt;Omit the protocol portion (http:, https:) from URLs pointing to images and other media files, style sheets, and scripts unless they are not available over both protocols.&lt;/p&gt;
 
-This prevents mixed content issues and results in minor file size savings.
+&lt;p&gt;This prevents mixed content issues and results in minor file size savings.&lt;/p&gt;
 
-__指向图像和其他媒体文件，样式表和脚本的URL中省略协议部分（http :, https :)，除非这两个协议都不可用__
+&lt;p&gt;&lt;strong&gt;指向图像和其他媒体文件，样式表和脚本的URL中省略协议部分（http :, https :)，除非这两个协议都不可用&lt;/strong&gt;&lt;/p&gt;
 
-这可以防止混合内容问题，从而节省较小的文件大小。
-```html
-&lt;!-- Good --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//CISS.org/css/main.css&quot;&gt;
+&lt;p&gt;这可以防止混合内容问题，从而节省较小的文件大小。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//CISS.org/css/main.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;!-- Bad --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;http://CISS.org/css/main.css&quot;&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://CISS.org/css/main.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 Elements and Attributes
-```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Always include html, head, and body tags.
+&lt;p&gt;Always include html, head, and body tags.&lt;/p&gt;
 
-Type attributes
+&lt;p&gt;Type attributes&lt;/p&gt;
 
-Do not use type or attributes for style sheets (unless not using CSS) and scripts (unless not using JavaScript).
+&lt;p&gt;Do not use type or attributes for style sheets (unless not using CSS) and scripts (unless not using JavaScript).&lt;/p&gt;
 
-不要使用样式表的类型或属性（除非不使用CSS）和脚本（除非不使用JavaScript）。
-```html
-&lt;!-- Good --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//CISS.org/css/main.css&quot;&gt;
+&lt;p&gt;不要使用样式表的类型或属性（除非不使用CSS）和脚本（除非不使用JavaScript）。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//CISS.org/css/main.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 
-&lt;!-- Bad --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;//CISS.org/css/main.css&quot; type=&quot;text/css&quot;&gt;
-```
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//CISS.org/css/main.css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Language attributes
+&lt;p&gt;Language attributes
 Do not use language attributes on script tags.
-不要在script标签上使用语言属性。
-```html
-&lt;!-- Good --&gt;
-&lt;script href=&quot;//code.jquery.com/jquery-latest.js&quot;&gt;
+不要在script标签上使用语言属性。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//code.jquery.com/jquery-latest.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
 
-&lt;!-- Bad --&gt;
-&lt;script href=&quot;//code.jquery.com/jquery-latest.js&quot; language=&quot;javascript&quot;&gt;
-```
+&amp;lt;!-- Bad --&amp;gt;
+&amp;lt;script href=&quot;//code.jquery.com/jquery-latest.js&quot; language=&quot;javascript&quot;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-Attributes
+&lt;p&gt;Attributes&lt;/p&gt;
 
-Attribute values should be quoted using double (&quot;&quot;) quotes. Optional attributes should be omitted.  
-应使用双引号（“”）引用属性值。可选属性应该省略
+&lt;p&gt;Attribute values should be quoted using double (“”) quotes. Optional attributes should be omitted.&lt;br /&gt;
+应使用双引号（“”）引用属性值。可选属性应该省略&lt;/p&gt;
 
-```html
-&lt;!-- Good --&gt;
-&lt;script src=&quot;//code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;
-&lt;!-- Bad --&gt;
-&lt;script src='//code.jquery.com/jquery-latest.js'&gt;&lt;/script&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//code.jquery.com/jquery-latest.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'//code.jquery.com/jquery-latest.js'&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 Use attribute/value pairs for boolean attributes
 
-&lt;!-- Good --&gt;
-&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; checked=&quot;checked&quot;&gt;
-&lt;!-- Bad --&gt;
-&lt;input type=&quot;checkbox&quot; value=&quot;on&quot; checked&gt;
-```
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checked&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;checkbox&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;on&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;checked&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-HTML attributes should be listed in an order that reflects the fact that class names are the primary interface through which CSS and JavaScript select elements.
+&lt;p&gt;HTML attributes should be listed in an order that reflects the fact that class names are the primary interface through which CSS and JavaScript select elements.
 按如下顺序书写属性
 class
 id
 data-*
-Everything else
+Everything else&lt;/p&gt;
 
-```html
-&lt;!-- Good --&gt;
-&lt;a class=&quot;[some-value]&quot; id=&quot;[some-value]&quot; data-name=&quot;[some-value]&quot; href=&quot;[some-value]&quot;&gt;Text&lt;/a&gt;
-&lt;!-- Bad --&gt;
-&lt;a href=&quot;[some-value]&quot; class=&quot;[some-value]&quot; id=&quot;[some-value]&quot; data-name=&quot;[some-value]&quot;&gt;Text&lt;/a&gt;
-```
-
-Elements with multiple attributes can have attributes arranged across multiple lines in an effort to improve readability and produce more useful diffs:
-具有多个属性的元素可以跨多行排列属性，以提高可读性：
-```html
-&lt;a class=&quot;[some-value]&quot;
- data-action=&quot;[some-value]&quot;
- data-id=&quot;[some-value]&quot;
- href=&quot;[some-value]&quot;&gt;
-    &lt;span&gt;Text&lt;/span&gt;
-&lt;/a&gt;
-```
-
-Elements
-
-Optional closing tags may not be omitted.
-所有标签必须关闭
-```html
-&lt;!-- Good --&gt;
-&lt;p&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
-&lt;!-- Bad --&gt;
-&lt;p&gt;The quick brown fox jumps over the lazy dog.
-Self-closing (void) elements should not be closed. Trailing forward slashes and spaces should be omitted.
-
-&lt;!-- Good --&gt;
-&lt;img src=&quot;//images/logo.png&quot; alt=&quot;&quot;&gt;
-&lt;!-- Bad --&gt;
-&lt;img src=&quot;//images/logo.png&quot; alt=&quot;&quot; /&gt;
-```
-
-Formatting
-
-Use a new line for every block, list, or table element, and indent every such child element.
-对每个块，列表或表格元素使用新行，并缩进每个这样的子元素。
-
-```html
-&lt;!-- Good --&gt;
-&lt;div&gt;
-	&lt;ul&gt;
-	  &lt;li&gt;Home&lt;/li&gt;
-	  &lt;li&gt;Blog&lt;/li&gt;
-	&lt;/ul&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;!-- Bad --&gt;
-&lt;div&gt;&lt;ul&gt;
-  &lt;li&gt;Home&lt;/li&gt;
-  &lt;li&gt;Blog&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;
-```
+&lt;p&gt;Elements with multiple attributes can have attributes arranged across multiple lines in an effort to improve readability and produce more useful diffs:
+具有多个属性的元素可以跨多行排列属性，以提高可读性：&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;data-action=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;data-id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;[some-value]&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;Text&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-使用2行空行分隔html块，消除末尾空隔
-```html
-&lt;blockquote&gt;
-    &lt;p&gt;&lt;em&gt;Space&lt;/em&gt;, the final frontier.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Elements&lt;/p&gt;
 
+&lt;p&gt;Optional closing tags may not be omitted.
+所有标签必须关闭&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;The quick brown fox jumps over the lazy dog.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;The quick brown fox jumps over the lazy dog.
+Self-closing (void) elements should not be closed. Trailing forward slashes and spaces should be omitted.
 
-&lt;ul&gt;
-    &lt;li&gt;Moe&lt;/li&gt;
-    &lt;li&gt;Larry&lt;/li&gt;
-    &lt;li&gt;Curly&lt;/li&gt;
-&lt;/ul&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//images/logo.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//images/logo.png&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
+&lt;p&gt;Formatting&lt;/p&gt;
 
-&lt;table&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th scope=&quot;col&quot;&gt;Income&lt;/th&gt;
-            &lt;th scope=&quot;col&quot;&gt;Taxes&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;tbody&gt;
-    &lt;tr&gt;
-        &lt;td&gt;$ 5.00&lt;/td&gt;
-        &lt;td&gt;$ 4.50&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-```
+&lt;p&gt;Use a new line for every block, list, or table element, and indent every such child element.
+对每个块，列表或表格元素使用新行，并缩进每个这样的子元素。&lt;/p&gt;
 
-Indentation
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+	  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+	  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 
-Don't indent inside html, body, script, or style. Indent inside head and all other elements. Indent by four spaces at a time. Don’t use tabs or mix tabs and spaces for indentation.
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&amp;gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-不要在html，body，script或style中缩进。缩进头部和所有其他元素。一次缩进四个空格。不要使用tab或混合标签和空格进行缩进。
-```html
-&lt;!-- Good --&gt;
-&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Sample Page&lt;/title&gt;
-
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot;&gt;
-    &lt;style&gt;
-    body {
-        font-size: 100em;
-    }
-    &lt;/style&gt;
-
-    &lt;script src=&quot;/jquery.js&quot;&gt;&lt;/script&gt;
-    &lt;script&gt;
-    $(function() {
-        $( &quot;p&quot; ).text( $.fn.jquery );
-    });
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;p&gt;CISS! is awesome!&lt;p&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-```
-Trailing Whitespace
-
-Remove trailing white spaces. Trailing white spaces are unnecessary and can complicate diffs.
-删除尾随的空格。
-```html
-&lt;!-- Good --&gt;
-&lt;p&gt;Yes please.&lt;/p&gt;
-
-&lt;!-- Bad --&gt;
-&lt;p&gt;No, thank you. &lt;/p&gt;
-```
-
-Inline CSS
-
-Inline CSS must be avoided. When altering states using JavaScript, use CSS to define your states, and only use on obtrusive JavaScript to alter class names whenever possible.
-
-必须避免内联CSS。当使用JavaScript更改状态时，请使用CSS来定义您的状态。
-React 除外。
-
-```html
-&lt;!-- Good --&gt;
-&lt;a class=&quot;is-link-disabled&quot; href=&quot;//index.php&quot;&gt;Home&lt;/a&gt;
-
-&lt;!-- Bad --&gt;
-&lt;a href=&quot;//index.php&quot; style=&quot;text-decoration: line-through;&quot;&gt;Home&lt;/a&gt;
-```
+&lt;p&gt;使用2行空行分隔html块，消除末尾空隔&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;blockquote&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;em&amp;gt;&lt;/span&gt;Space&lt;span class=&quot;nt&quot;&gt;&amp;lt;/em&amp;gt;&lt;/span&gt;, the final frontier.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/blockquote&amp;gt;&lt;/span&gt;
 
 
-Style Attributes
-
-You should not use border, align, valign, or clear attributes. Avoid use of style attributes, except where using syndicated content or internal syndicating systems.
-
-Semantics
-
-Use HTML according to its purpose. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.
-使用合适的语义标签，根据目的使用HTML。
-
-Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.
-根据其目的使用HTML对于可访问性，重用和代码效率很重要。
-
-```html
-&lt;!-- Good --&gt;
-&lt;a href=&quot;subscriptions/&quot;&gt;View subscriptions&lt;/a&gt;
-
-&lt;!-- Bad --&gt;
-&lt;div onclick=&quot;goToSubscriptions();&quot;&gt;View subscriptions&lt;/div&gt;
-```
-Markup
-
-Image Tags
-
-Image elements () must have an alt attribute. Height and width attributes are optional and may be omitted.
-Image elements（）必须具有alt属性。高度和宽度属性是可选的，可以省略。
-
-Comments
-在标签结尾标明对应的开始标签
-```html
-&lt;div class=&quot;parent&quot;&gt;
-
-    &lt;div class=&quot;child&quot;&gt;
-    &lt;/div&gt;&lt;!-- /child --&gt;
-
-&lt;/div&gt;&lt;!-- /parent --&gt;
-```
-Mark todos
-
-Highlight todos by using the keyword TODO, eg:
-使用 TODO标明代办办事件
-```html
-&lt;!-- TODO: add active item class --&gt;
-&lt;ul&gt;
-  &lt;li&gt;Home&lt;/li&gt;
-  &lt;li&gt;Blog&lt;/li&gt;
-&lt;/ul&gt;
-```
-Adding line breaks
-
-Always use &lt;br /&gt; instead of &lt;br&gt; and &lt;br/&gt;
-始终使用&lt;br /&gt; 而不是&lt;br&gt; 或 &lt;br/&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">Doctype</summary></entry><entry><title type="html">How to do a redirect to another route programmatically with react Router v4</title><link href="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/" rel="alternate" type="text/html" title="How to do a redirect to another route programmatically with react Router v4" /><published>2017-08-30T00:00:00+08:00</published><updated>2017-08-30T00:00:00+08:00</updated><id>http://localhost:4000/How%20to%20do%20a%20redirect%20to%20another%20route%20programmatically%20with%20react-router%20v4</id><content type="html" xml:base="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/">### How to do a redirect to another route programmatically with react-router v4.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Moe&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Larry&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Curly&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
 
 
-#### Header.js
-#### first of all just import withRouter, with this,You can get access to the history object’s properties and the closest &lt;Route&gt;'s match via the withRouter higher-order component. withRouter will re-render its component every time the route changes with the same props as &lt;Route&gt; render props: { match, location, history }.
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;table&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;thead&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;scope=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Income&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;th&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;scope=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;col&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Taxes&lt;span class=&quot;nt&quot;&gt;&amp;lt;/th&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tbody&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;tr&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;$ 5.00&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;td&amp;gt;&lt;/span&gt;$ 4.50&lt;span class=&quot;nt&quot;&gt;&amp;lt;/td&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/table&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-``` js
-// ....
-import { withRouter } from 'react-router'
+&lt;p&gt;Indentation&lt;/p&gt;
 
-class Header extends Component {
-  functionMethod() {
-    // then push you path into history.
-    this.props.history.push( &quot;/path&quot;);
-  }
-  // ...
-}
+&lt;p&gt;Don’t indent inside html, body, script, or style. Indent inside head and all other elements. Indent by four spaces at a time. Don’t use tabs or mix tabs and spaces for indentation.&lt;/p&gt;
 
-// export component by invoke withRouter.
-export default withRouter(Header);
-```
+&lt;p&gt;不要在html，body，script或style中缩进。缩进头部和所有其他元素。一次缩进四个空格。不要使用tab或混合标签和空格进行缩进。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;utf-8&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Sample Page&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
 
-#### And for Navigator which normally used as public component and it not rendered by &lt;Route&gt;&lt;/Route&gt; you need use createBrowserHistory to create history object for it. Consider following example.
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/style.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
 
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/jquery.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;p&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jquery&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
 
-``` js
-//Routers.js
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;CISS! is awesome!&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;
 
-import { createBrowserHistory } from 'history';
-// import createBrowserHistory to create react history object for header component
-const history = createBrowserHistory();
-// ...
-class Routers extends Component{
-  render(){
-    return (
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Trailing Whitespace&lt;/p&gt;
 
-    &lt;BrowserRouter  basename=&quot;/platform&quot;&gt;
-      &lt;div&gt;
-        &lt;Header history={history}&gt;&lt;/Header&gt;
-        // set history as Header.js's props without createBrowserHistory you will not able to access history here.
+&lt;p&gt;Remove trailing white spaces. Trailing white spaces are unnecessary and can complicate diffs.
+删除尾随的空格。&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Yes please.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
 
-        &lt;Switch&gt;
-            &lt;Route
-                path={&quot;/bom&quot;}
-                children={({history}) =&gt; (
-                  &lt;Bom history={history}&gt;&lt;/Bom&gt;
-                )}
-            &gt;
-            &lt;/Route&gt;
-            // ....
-            &lt;/Switch&gt;
-            &lt;/div&gt;
-        &lt;/BrowserRouter&gt;
-    )
-  }
-}
-// ...
-export default Routers;
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;No, thank you. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-```</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">How to do a redirect to another route programmatically with react-router v4.</summary></entry><entry><title type="html">Set Welcom Info For Centos</title><link href="http://localhost:4000/set-Welcom-info-for-CentOS/" rel="alternate" type="text/html" title="Set Welcom Info For Centos" /><published>2017-05-25T00:00:00+08:00</published><updated>2017-05-25T00:00:00+08:00</updated><id>http://localhost:4000/set-Welcom-info-for-CentOS</id><content type="html" xml:base="http://localhost:4000/set-Welcom-info-for-CentOS/">### set Welcom info for centos
+&lt;p&gt;Inline CSS&lt;/p&gt;
 
-```bash
-$ vim /etc/motd
-```
-input something use full such as where is your application directory is.</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set Welcom info for centos</summary></entry><entry><title type="html">Set Existsing Folder Point To Remote Git</title><link href="http://localhost:4000/set-existsing-folder-point-to-remote-git/" rel="alternate" type="text/html" title="Set Existsing Folder Point To Remote Git" /><published>2017-04-20T00:00:00+08:00</published><updated>2017-04-20T00:00:00+08:00</updated><id>http://localhost:4000/set-existsing-folder-point-to-remote-git</id><content type="html" xml:base="http://localhost:4000/set-existsing-folder-point-to-remote-git/"># set-existsing-folder-point-to-remote-git
+&lt;p&gt;Inline CSS must be avoided. When altering states using JavaScript, use CSS to define your states, and only use on obtrusive JavaScript to alter class names whenever possible.&lt;/p&gt;
 
-``` bash
-1. $ git init
+&lt;p&gt;必须避免内联CSS。当使用JavaScript更改状态时，请使用CSS来定义您的状态。
+React 除外。&lt;/p&gt;
 
-2. $ git remote add origin https://github.com/xxx/xxx.git
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;is-link-disabled&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//index.php&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 
-3. $ git branch --set-upstream-to=origin/&lt;branch&gt; master
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;//index.php&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text-decoration: line-through;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-4. $ git pull --allow-unrelated-histories
-```
-**watch out** here's needs https:// not ssh, in case you don't have the SSH keys. but you can also use ssh if you'd prefer.
+&lt;p&gt;Style Attributes&lt;/p&gt;
 
-In my case, error was just `fatal: refusing to merge unrelated histories` on every especially first pull request after remotely adding a git repo.
-Using `--allow-unrelated-histories` flag worked with pull request in this way</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set-existsing-folder-point-to-remote-git</summary></entry><entry><title type="html">Use Nodejs Server To Serve &amp;amp; Test React App On Centos 6</title><link href="http://localhost:4000/use-nodejs-server-to-serve-&-test-react-app-on-centos-6/" rel="alternate" type="text/html" title="Use Nodejs Server To Serve &amp; Test React App On Centos 6" /><published>2017-04-19T00:00:00+08:00</published><updated>2017-04-19T00:00:00+08:00</updated><id>http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6</id><content type="html" xml:base="http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6/">https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
-https://expressjs.com/en/starter/installing.html
+&lt;p&gt;You should not use border, align, valign, or clear attributes. Avoid use of style attributes, except where using syndicated content or internal syndicating systems.&lt;/p&gt;
 
-### 1. Download Node.js
+&lt;p&gt;Semantics&lt;/p&gt;
 
-You will want to download the latest stable version of Node.js, which can be done by running the command below. It runs a script that automatically steps you through the installation process. The script is downloaded directly from Joylent (the makers of Node.js) at their NodeSource repository.
+&lt;p&gt;Use HTML according to its purpose. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.
+使用合适的语义标签，根据目的使用HTML。&lt;/p&gt;
 
-``` {r, engine='', count_lines}
- cd /tmp  
- curl -sL https://rpm.nodesource.com/setup | bash -
- ```
-notice here need update url flowing the instruction.
+&lt;p&gt;Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.
+根据其目的使用HTML对于可访问性，重用和代码效率很重要。&lt;/p&gt;
 
-### 2. Install Node.js
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Good --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;subscriptions/&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View subscriptions&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
 
-Once the script detects that you do not have Node.js installed, enter the following command to begin the install via the yum package manager.
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Bad --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;goToSubscriptions();&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;View subscriptions&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Markup&lt;/p&gt;
 
- yum install -y nodejs</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/ https://expressjs.com/en/starter/installing.html</summary></entry></feed>
+&lt;p&gt;Image Tags&lt;/p&gt;
+
+&lt;p&gt;Image elements () must have an alt attribute. Height and width attributes are optional and may be omitted.
+Image elements（）必须具有alt属性。高度和宽度属性是可选的，可以省略。&lt;/p&gt;
+
+&lt;p&gt;Comments
+在标签结尾标明对应的开始标签&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;parent&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;child&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /child --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /parent --&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Mark todos&lt;/p&gt;
+
+&lt;p&gt;Highlight todos by using the keyword TODO, eg:
+使用 TODO标明代办办事件&lt;/p&gt;
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- TODO: add active item class --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Home&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Blog&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Adding line breaks&lt;/p&gt;
+
+&lt;p&gt;Always use &lt;br /&gt; instead of &lt;br /&gt; and &lt;br /&gt;
+始终使用&lt;br /&gt; 而不是&lt;br /&gt; 或 &lt;br /&gt;&lt;/p&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">Doctype</summary></entry><entry><title type="html">How to do a redirect to another route programmatically with react Router v4</title><link href="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/" rel="alternate" type="text/html" title="How to do a redirect to another route programmatically with react Router v4" /><published>2017-08-30T00:00:00+08:00</published><updated>2017-08-30T00:00:00+08:00</updated><id>http://localhost:4000/How%20to%20do%20a%20redirect%20to%20another%20route%20programmatically%20with%20react-router%20v4</id><content type="html" xml:base="http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/">&lt;h3 id=&quot;how-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4&quot;&gt;How to do a redirect to another route programmatically with react-router v4.&lt;/h3&gt;
+
+&lt;h4 id=&quot;headerjs&quot;&gt;Header.js&lt;/h4&gt;
+&lt;h4 id=&quot;first-of-all-just-import-withrouter-with-thisyou-can-get-access-to-the-history-objects-properties-and-the-closest-s-match-via-the-withrouter-higher-order-component-withrouter-will-re-render-its-component-every-time-the-route-changes-with-the-same-props-as--render-props--match-location-history-&quot;&gt;first of all just import withRouter, with this,You can get access to the history object’s properties and the closest &lt;Route&gt;'s match via the withRouter higher-order component. withRouter will re-render its component every time the route changes with the same props as &lt;Route&gt; render props: { match, location, history }.&lt;/Route&gt;&lt;/Route&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ....&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;withRouter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react-router'&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;functionMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// then push you path into history.&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/path&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// export component by invoke withRouter.&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;withRouter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h4 id=&quot;and-for-navigator-which-normally-used-as-public-component-and-it-not-rendered-by--you-need-use-createbrowserhistory-to-create-history-object-for-it-consider-following-example&quot;&gt;And for Navigator which normally used as public component and it not rendered by &lt;Route&gt;&lt;/Route&gt; you need use createBrowserHistory to create history object for it. Consider following example.&lt;/h4&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Routers.js&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBrowserHistory&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'history'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// import createBrowserHistory to create react history object for header component&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBrowserHistory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Routers&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;BrowserRouter&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;basename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/platform&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Header&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Header&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;c1&quot;&gt;// set history as Header.js's props without createBrowserHistory you will not able to access history here.&lt;/span&gt;
+
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Switch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Route&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/bom&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bom&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;history&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Bom&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;                &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Route&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;c1&quot;&gt;// ....&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Switch&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/BrowserRouter&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Routers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">How to do a redirect to another route programmatically with react-router v4.</summary></entry><entry><title type="html">Set Welcom Info For Centos</title><link href="http://localhost:4000/set-Welcom-info-for-CentOS/" rel="alternate" type="text/html" title="Set Welcom Info For Centos" /><published>2017-05-25T00:00:00+08:00</published><updated>2017-05-25T00:00:00+08:00</updated><id>http://localhost:4000/set-Welcom-info-for-CentOS</id><content type="html" xml:base="http://localhost:4000/set-Welcom-info-for-CentOS/">&lt;h3 id=&quot;set-welcom-info-for-centos&quot;&gt;set Welcom info for centos&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;vim /etc/motd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;input something use full such as where is your application directory is.&lt;/p&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set Welcom info for centos</summary></entry><entry><title type="html">Set Existsing Folder Point To Remote Git</title><link href="http://localhost:4000/set-existsing-folder-point-to-remote-git/" rel="alternate" type="text/html" title="Set Existsing Folder Point To Remote Git" /><published>2017-04-20T00:00:00+08:00</published><updated>2017-04-20T00:00:00+08:00</updated><id>http://localhost:4000/set-existsing-folder-point-to-remote-git</id><content type="html" xml:base="http://localhost:4000/set-existsing-folder-point-to-remote-git/">&lt;h1 id=&quot;set-existsing-folder-point-to-remote-git&quot;&gt;set-existsing-folder-point-to-remote-git&lt;/h1&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git init
+
+2. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git remote add origin https://github.com/xxx/xxx.git
+
+3. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git branch --set-upstream-to&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;origin/&amp;lt;branch&amp;gt; master
+
+4. &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git pull --allow-unrelated-histories
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;watch out&lt;/strong&gt; here’s needs https:// not ssh, in case you don’t have the SSH keys. but you can also use ssh if you’d prefer.&lt;/p&gt;
+
+&lt;p&gt;In my case, error was just &lt;code class=&quot;highlighter-rouge&quot;&gt;fatal: refusing to merge unrelated histories&lt;/code&gt; on every especially first pull request after remotely adding a git repo.
+Using &lt;code class=&quot;highlighter-rouge&quot;&gt;--allow-unrelated-histories&lt;/code&gt; flag worked with pull request in this way&lt;/p&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">set-existsing-folder-point-to-remote-git</summary></entry><entry><title type="html">Use Nodejs Server To Serve &amp;amp; Test React App On Centos 6</title><link href="http://localhost:4000/use-nodejs-server-to-serve-&-test-react-app-on-centos-6/" rel="alternate" type="text/html" title="Use Nodejs Server To Serve &amp; Test React App On Centos 6" /><published>2017-04-19T00:00:00+08:00</published><updated>2017-04-19T00:00:00+08:00</updated><id>http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6</id><content type="html" xml:base="http://localhost:4000/use-nodejs-server-to-serve-&amp;-test-react-app-on-centos-6/">&lt;p&gt;https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
+https://expressjs.com/en/starter/installing.html&lt;/p&gt;
+
+&lt;h3 id=&quot;1-download-nodejs&quot;&gt;1. Download Node.js&lt;/h3&gt;
+
+&lt;p&gt;You will want to download the latest stable version of Node.js, which can be done by running the command below. It runs a script that automatically steps you through the installation process. The script is downloaded directly from Joylent (the makers of Node.js) at their NodeSource repository.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;r,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;engine='',&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;count_lines&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/tmp&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;curl&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-sL&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;https://rpm.nodesource.com/setup&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;bash&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;
+notice here need update url flowing the instruction.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-install-nodejs&quot;&gt;2. Install Node.js&lt;/h3&gt;
+
+&lt;p&gt;Once the script detects that you do not have Node.js installed, enter the following command to begin the install via the yum package manager.&lt;/p&gt;
+
+&lt;p&gt;yum install -y nodejs&lt;/p&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/ https://expressjs.com/en/starter/installing.html</summary></entry></feed>

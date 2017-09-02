@@ -1,6 +1,7 @@
 ---
-layout : archive
+layout : single
 excerpt: "replace url prameter by js"
+comments: true
 header:
   overlay_image: /assets/images/sebastien-gabriel-13688.jpg
 ---

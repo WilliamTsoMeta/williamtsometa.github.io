@@ -1,7 +1,11 @@
 ---
 layout : single
 excerpt: "replace url prameter by js"
+author_profile: true
+read_time: true
 comments: true
+share: true
+related: true
 header:
   overlay_image: /assets/images/sebastien-gabriel-13688.jpg
 ---

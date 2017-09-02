@@ -1,5 +1,6 @@
 ---
 layout : single
+comments: true
 ---
 
 # React Style Guide

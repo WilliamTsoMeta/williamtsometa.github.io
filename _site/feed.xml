@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-02T17:53:30+08:00</updated><id>http://localhost:4000/</id><title type="html">William Vit</title><subtitle>All about web development</subtitle><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><entry><title type="html">Replace Url Prameter By Js</title><link href="http://localhost:4000/replace-url-prameter-by-js/" rel="alternate" type="text/html" title="Replace Url Prameter By Js" /><published>2017-09-02T00:00:00+08:00</published><updated>2017-09-02T00:00:00+08:00</updated><id>http://localhost:4000/replace-url-prameter-by-js</id><content type="html" xml:base="http://localhost:4000/replace-url-prameter-by-js/">&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.something.com?some_parameter_name=old_parameter_value&amp;amp;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-02T19:21:32+08:00</updated><id>http://localhost:4000/</id><title type="html">William Vit</title><subtitle>All about web development</subtitle><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><entry><title type="html">Replace Url Prameter By Js</title><link href="http://localhost:4000/replace-url-prameter-by-js/" rel="alternate" type="text/html" title="Replace Url Prameter By Js" /><published>2017-09-02T00:00:00+08:00</published><updated>2017-09-02T00:00:00+08:00</updated><id>http://localhost:4000/replace-url-prameter-by-js</id><content type="html" xml:base="http://localhost:4000/replace-url-prameter-by-js/">&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'www.something.com?some_parameter_name=old_parameter_value&amp;amp;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;parameter_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'name='&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url_regex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parameter_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'[^&amp;amp;]+'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;amp;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -14,182 +14,200 @@
 &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;12345.00&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">replace url prameter by js</summary></entry><entry><title type="html">Ciss React Standard Style</title><link href="http://localhost:4000/CISS-React-Standard-Style/" rel="alternate" type="text/html" title="Ciss React Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-React-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-React-Standard-Style/"># React Style Guide
+&lt;/div&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">replace url prameter by js</summary></entry><entry><title type="html">Ciss React Standard Style</title><link href="http://localhost:4000/CISS-React-Standard-Style/" rel="alternate" type="text/html" title="Ciss React Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-React-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-React-Standard-Style/">&lt;h1 id=&quot;react-style-guide&quot;&gt;React Style Guide&lt;/h1&gt;
 
-# jQuery
+&lt;h1 id=&quot;jquery&quot;&gt;jQuery&lt;/h1&gt;
 
-* __In general, avoid using jQuery within React components.__
-* __Never use jQuery in a component for DOM manipulation.__
-* __Performing ajax with jQuery in your component is fine.__
-* __If you're using a jQuery plugin, consider encapsulating the use of the plugin in its own component so that you only have to manage it in a single place.__
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;In general, avoid using jQuery within React components.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Never use jQuery in a component for DOM manipulation.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Performing ajax with jQuery in your component is fine.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;If you’re using a jQuery plugin, consider encapsulating the use of the plugin in its own component so that you only have to manage it in a single place.&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;尽量避免在React组件中使用jQuery。&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;绝不在组件中使用jQuery进行DOM操作。&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;执行 ajax与jQuery在你的组件是允许的.&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;如果您正在使用jQuery插件，请考虑将插件的使用封装在自己的组件中，以便只需在单个位置进行管理。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h4 id=&quot;sources&quot;&gt;Sources&lt;/h4&gt;
+&lt;p&gt;Based on the styles recommended from:  &lt;br /&gt;
+&lt;strong&gt;根据以下推荐的风格编辑：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;https://github.com/Khan/style-guides/blob/master/style/react.md&lt;/li&gt;
+  &lt;li&gt;https://reactjsnews.com/react-style-guide-patterns-i-like/&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://reactjs-training.com/&quot;&gt;React.js Training&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/ryanflorence&quot;&gt;Ryan Florence&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/mjackson&quot;&gt;Michael Jackson&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
-* __尽量避免在React组件中使用jQuery。__
-* __绝不在组件中使用jQuery进行DOM操作。__
-* __执行 ajax与jQuery在你的组件是允许的.__
-* __如果您正在使用jQuery插件，请考虑将插件的使用封装在自己的组件中，以便只需在单个位置进行管理。__
+&lt;h1 id=&quot;classes&quot;&gt;Classes&lt;/h1&gt;
 
-#### Sources
-Based on the styles recommended from:    
-__根据以下推荐的风格编辑：__
-1. https://github.com/Khan/style-guides/blob/master/style/react.md
-2. https://reactjsnews.com/react-style-guide-patterns-i-like/
-3. [React.js Training](https://reactjs-training.com/) by [Ryan Florence](https://twitter.com/ryanflorence) and [Michael Jackson](https://twitter.com/mjackson)
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Component class names should always begin with an upper case character. React expects elements starting with a lower case character to be built-in HTML elements and will throw an error if your component starts with one.&lt;br /&gt;
+&lt;strong&gt;组件类名应始终以大写字母开头。
+React希望以小写字符开头的元素是内置的HTML元素，如果您的组件以一个小写字母开头，则会抛出错误。&lt;/strong&gt;&lt;/p&gt;
 
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Bad&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
 
-# Classes
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MyComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Members should be in the following order:
+    &lt;ol&gt;
+      &lt;li&gt;Lifecycle methods in order of occurrence&lt;/li&gt;
+      &lt;li&gt;Implementation methods&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;定义方法的顺序如下&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;&lt;strong&gt;constructor&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;内置生命周期方法&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;自定义方法&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+    &lt;/ol&gt;
 
-* Component class names should always begin with an upper case character. React expects elements starting with a lower case character to be built-in HTML elements and will throw an error if your component starts with one.  
-__组件类名应始终以大写字母开头。
-React希望以小写字符开头的元素是内置的HTML元素，如果您的组件以一个小写字母开头，则会抛出错误。__
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;                
+      &lt;span class=&quot;na&quot;&gt;componentWillMount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;componentWillUnmount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;_myMethod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method should always be last - this way you can easily find it by scrolling to the bottom of the file.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;方法应该是最后一个 - 这样你可以通过滚动到文件的底部轻松的找到它。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Prefix custom methods and event handlers with an underscore.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;使用下划线修饰自定义方法和事件处理程序。&lt;/strong&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;_handleButtonClick: function () {},&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Event handlers should be named &lt;code class=&quot;highlighter-rouge&quot;&gt;_handle{EventName}&lt;/code&gt;. Props that pass event handlers should be named &lt;code class=&quot;highlighter-rouge&quot;&gt;on{EventName}&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;自定义事件处理程序应该被命名为&lt;code class=&quot;highlighter-rouge&quot;&gt;_handle{EventName}&lt;/code&gt;。 传递事件处理程序的 props 应该命名为“on{EventName}”。例如：&lt;/strong&gt;&lt;/p&gt;
 
-    ```js
-    // Bad
-    var myComponent = React.createClass({ /* ... */ });
-
-    // Good
-    var MyComponent = React.createClass({ /* ... */ });
-    ```
-
-* Members should be in the following order:
-    1. Lifecycle methods in order of occurrence
-    2. Implementation methods
-    3. `render`
-
-
-* __定义方法的顺序如下__
-  1. __constructor__
-  2. __内置生命周期方法__
-  3. __自定义方法__
-  4. __`render`__
-
-    ```js
-    const Foo = React.createClass({                
-        componentWillMount: function () {},
-        componentWillUnmount: function () {},
-        _handleButtonClick: function () {},
-        _myMethod: function () {},
-        render: function () {}
-    });
-    ```
-
-* The `render` method should always be last - this way you can easily find it by scrolling to the bottom of the file.  
-* __`render`方法应该是最后一个 - 这样你可以通过滚动到文件的底部轻松的找到它。__
-
-* Prefix custom methods and event handlers with an underscore.
-* __使用下划线修饰自定义方法和事件处理程序。__
-`_handleButtonClick: function () {},`
-
-* Event handlers should be named `_handle{EventName}`. Props that pass event handlers should be named `on{EventName}`.
-* __自定义事件处理程序应该被命名为`_handle{EventName}`。 传递事件处理程序的 props 应该命名为“on{EventName}”。例如：__
-
-    ```js
-    _handleButtonClick: function (e) { /* ... */ }
-    ```
-
-    ```js
-    &lt;Foo onButtonClick={this._handleButtonClick} /&gt;
-    ```
-
-* The element returned by the `render` method should have a `className` matching the name of the component (or otherwise identifying the component). This is useful for &quot;namespacing&quot; any CSS/LESS that go with the component. For example:
-* __`render`方法返回的元素应该有一个`类名`匹配组件的名称（或以其他方式标识组件）。 对任何使用CSS/LESS“命名空间”的组件是有用的。 例如：__
-
-    ```js
-    // Foobar.js
-    import React from 'react';
-    import 'Foobar.less';
-
-    const Foobar = React.createClass({
-        render: function () {
-            return &lt;div className=&quot;foobar&quot;&gt;
-                Foobar
-            &lt;/div&gt;;
-        }
-    });
-
-    export default Foobar;
-    ```
-
-    ```less
-    // Foobar.less
-    .foobar {
-        // Rules defined here will only apply to Foobar elements
-    }
-    ```
-
-# JSX
-
-* Align props when you can't fit them all on a single line. The ending &quot;&gt;&quot; of the opening tag should go on its own line. This makes it clearly visible where the opening tag ends and the element's children begin.
-* __当您无法将其全部放在一行上时，将props对齐。 开始标签的结尾“&gt;”应该另起一行。 以便分辨开始标签和子元素。__
-    ```js
-    // Bad
-    &lt;div className=&quot;foo-container&quot;
-        data-bar=&quot;some value&quot;&gt;
-        { /* ... */ }
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nx&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    // Good
-    &lt;div className=&quot;foo-container&quot; data-bar=&quot;some value&quot;&gt;
-        { /* ... */ }
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onButtonClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_handleButtonClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The element returned by the &lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt; method should have a &lt;code class=&quot;highlighter-rouge&quot;&gt;className&lt;/code&gt; matching the name of the component (or otherwise identifying the component). This is useful for “namespacing” any CSS/LESS that go with the component. For example:&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;render&lt;/code&gt;方法返回的元素应该有一个&lt;code class=&quot;highlighter-rouge&quot;&gt;类名&lt;/code&gt;匹配组件的名称（或以其他方式标识组件）。 对任何使用CSS/LESS“命名空间”的组件是有用的。 例如：&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Foobar.js&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'react'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Foobar.less'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foobar&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+  &lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Foobar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
 
-    // Good
-    &lt;div
-        className=&quot;foo-container&quot;
-        data-bar=&quot;some value&quot;
-    &gt;
-        { /* ... */ }
+    &lt;pre&gt;&lt;code class=&quot;language-less&quot;&gt;  // Foobar.less
+  .foobar {
+      // Rules defined here will only apply to Foobar elements
+  }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;jsx&quot;&gt;JSX&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Align props when you can’t fit them all on a single line. The ending “&amp;gt;” of the opening tag should go on its own line. This makes it clearly visible where the opening tag ends and the element’s children begin.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;当您无法将其全部放在一行上时，将props对齐。 开始标签的结尾“&amp;gt;”应该另起一行。 以便分辨开始标签和子元素。&lt;/strong&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// Bad&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Good&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;foo-container&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some value&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
     &lt;/div&gt;
-    ```
+  &lt;/li&gt;
+  &lt;li&gt;Open elements that span multiple lines on the same line. This conserves space because it requires one fewer tab and also saves a couple of lines.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;打开同一行上跨多行的元素。 这节省了空间，因为它需要更少的缩进。&lt;/strong&gt;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// OK...&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-* Open elements that span multiple lines on the same line. This conserves space because it requires one fewer tab and also saves a couple of lines.
-* __打开同一行上跨多行的元素。 这节省了空间，因为它需要更少的缩进。__
-    ```js
-    // OK...
-    var multilineJsx = (
-        &lt;div&gt;
-            { /* ... */ }
-        &lt;/div&gt;
-    );
+  &lt;span class=&quot;c1&quot;&gt;// Better&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Better&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multilineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;really very long class&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;reallyReallyReallyLongId&quot;&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;some important value&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;cm&quot;&gt;/* ... */&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Variables holding a JSX object can stay on one line if it is short enough.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;变量可以保持JSX元素在一行内。&lt;/strong&gt;&lt;/p&gt;
 
-    // Better
-    var multilineJsx = &lt;div&gt;
-        { /* ... */ }
-    &lt;/div&gt;;
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;singleLineJsx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;My&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When rendering a list of components from an array, do it inline if it makes sense. If the map function is too long or complicated, consider extracting it out into its own method on the component class.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;当从数组中渲染列表时将其内联。 如果 map 函数太长或复杂，请考虑将其提取为独立组件。&lt;/strong&gt;&lt;/p&gt;
 
-    // Better
-    var multilineJsx = &lt;div
-        className=&quot;really very long class&quot;
-        id=&quot;reallyReallyReallyLongId&quot;
-        data-foo=&quot;some important value&quot;
-    &gt;
-        { /* ... */ }
-    &lt;/div&gt;;
-    ```
+    &lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/li&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ul&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// or with ES6&lt;/span&gt;
 
-* Variables holding a JSX object can stay on one line if it is short enough.
-* __变量可以保持JSX元素在一行内。__
-
-    ```js
-    var singleLineJsx = &lt;h1&gt;My header&lt;/h1&gt;;
-    ```
-
-* When rendering a list of components from an array, do it inline if it makes sense. If the map function is too long or complicated, consider extracting it out into its own method on the component class.
-* __当从数组中渲染列表时将其内联。 如果 map 函数太长或复杂，请考虑将其提取为独立组件。__
-
-    ```js
-    &lt;ul&gt;
-        {items.map(function (item, i) {
-            return &lt;li key={i}&gt;{item}&lt;/li&gt;;
-        )}
-    &lt;/ul&gt;;
-
-    // or with ES6
-
-    &lt;ul&gt;
-        {items.map((item, i) =&gt; &lt;li key={i}&gt;{item}&lt;/li&gt;)}
-    &lt;/ul&gt;;
-    ```</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">React Style Guide</summary></entry><entry><title type="html">Ciss Javascript Standard Style</title><link href="http://localhost:4000/CISS-JavaScript-Standard-Style/" rel="alternate" type="text/html" title="Ciss Javascript Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-JavaScript-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-JavaScript-Standard-Style/"># JavaScript Standard Style
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ul&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;li&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/li&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}
+&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/ul&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>William Vit</name><email>vitalitymailg@gmail.com</email></author><summary type="html">React Style Guide</summary></entry><entry><title type="html">Ciss Javascript Standard Style</title><link href="http://localhost:4000/CISS-JavaScript-Standard-Style/" rel="alternate" type="text/html" title="Ciss Javascript Standard Style" /><published>2017-09-01T00:00:00+08:00</published><updated>2017-09-01T00:00:00+08:00</updated><id>http://localhost:4000/CISS-JavaScript-Standard-Style</id><content type="html" xml:base="http://localhost:4000/CISS-JavaScript-Standard-Style/"># JavaScript Standard Style
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 

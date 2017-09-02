@@ -232,15 +232,15 @@ compress_html:
     envs: development
 
 # Defaults
-# defaults:
+defaults:
   # _posts
-  # - scope:
-  #     path: "_posts/"
-  #     type: posts
-  #   values:
-  #     layout: single
-  #     author_profile: true
-  #     read_time: true
-  #     comments: false
-  #     share: true
-  #     related: true
+  - scope:
+      path: "_posts/"
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

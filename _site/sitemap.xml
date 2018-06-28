@@ -13,7 +13,7 @@
 <lastmod>2017-05-25T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/</loc>
+<loc>http://localhost:4000/front-end/How-to-do-a-redirect-to-another-route-programmatically-with-react-router-v4/</loc>
 <lastmod>2017-08-30T00:00:00+08:00</lastmod>
 </url>
 <url>
@@ -58,6 +58,18 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/css/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/js/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/tags/html/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/categories/front-end/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>

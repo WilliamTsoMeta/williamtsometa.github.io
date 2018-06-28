@@ -6,6 +6,7 @@ read_time: true
 comments: true
 share: true
 related: true
+category: front-end
 tags:
   - CSS
   - JS

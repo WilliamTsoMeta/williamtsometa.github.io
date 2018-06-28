@@ -1,0 +1,36 @@
+<h4 id="1-browser-limited-the-number-of-network-request-so-reduce-request-number-will-speed-up-web-page-speed">1. browser limited the number of network request, so reduce request number will speed up web page speed.</h4>
+
+<h4 id="2-web-page-not-going-to-be--able-render-properly-until-its-downloaded-all-the-css-so-import-js-file-after-css-file">2. Web page not going to be  able render properly until it’s downloaded all the CSS. So import JS file after CSS file</h4>
+
+<h4 id="3-remove-bad-request">3. remove bad request.</h4>
+
+<h4 id="4-async-js-file-if-it-could-be">4. async JS file if it could be.</h4>
+
+<h4 id="5-compress-images-reexport-icons-to-png">5. Compress images, reexport icons to png</h4>
+
+<p><strong>By default, CSS is treated as a render blocking resource, which means that the browser won’t render any processed content until the CSSOM is constructed. Make sure to keep your CSS lean, deliver it as quickly as possible, and use media types and queries to unblock rendering.</strong></p>
+
+<h3 id="1-lean-your-css-file-and-use--appropriate--media-types">1. Lean your css file and use  appropriate  media types.</h3>
+
+<p>In the render tree construction we saw that the critical rendering path requires both the DOM and the CSSOM to construct the render tree. This creates an important performance implication: <strong>both HTML and CSS are render blocking resources.</strong> The HTML is obvious, since without the DOM we would not have anything to render, but the CSS requirement may be less obvious. What would happen if we try to render a typical page without blocking rendering on CSS?</p>
+
+<h3 id="2add-async-property-to-your-js-tag-eliminate-unnecessary-js-from-the-critical-rendering-path">2.Add async property to your JS tag, eliminate unnecessary JS from the critical rendering path.</h3>
+
+<p>JavaScript allows us to modify just about every aspect of the page: content, styling, and its response to user interaction. However, JavaScript can also block DOM construction and delay when the page is rendered. To deliver optimal performance, make your JavaScript async and eliminate any unnecessary JavaScript from the critical rendering path.</p>
+
+<p><strong>Our script is executed at the exact point where it is inserted in the document. When the HTML parser encounters a script tag, it pauses its process of constructing the DOM and yields control to the JavaScript engine; after the JavaScript engine finishes running, the browser then picks up where it left off and resumes DOM construction.</strong></p>
+
+<h3 id="minify-compress-cache">Minify Compress Cache</h3>
+<p>HTML CSS JS
+1.Minimize Bytes<br />
+2.Reduce critical resource.</p>
+
+<h3 id="minimize-use-of-render-blocking-resources">Minimize use of render blocking resources.</h3>
+<p>1.use media queries on <link /> to unblock rendering.<br />
+2.use inline CSS.<br />
+3.shorten CRD length.</p>
+
+<h3 id="minimize-use-of-parser-blocking-resources">Minimize use of parser blocking resources</h3>
+<p>1.defer JS execution<br />
+2.use async attribute on <script></script></p>
+

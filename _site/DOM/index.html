@@ -1,0 +1,127 @@
+<h3 id="14-properties-and-methods-for-working-with-nodes">1.4 Properties and Methods for Working with Nodes</h3>
+<p>the most common Node properties and methods inherited by all node objects:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">//_Node properties_</span>
+<span class="nx">childNodes</span>
+<span class="nx">firstChild</span>
+<span class="nx">lastChild</span>
+<span class="nx">nextSibling</span>
+<span class="nx">nodeName</span>
+<span class="nx">nodeType</span>
+<span class="nx">nodeValue</span>
+<span class="nx">parentNode</span>
+<span class="nx">previousSibling</span>
+
+<span class="c1">//Node Methods</span>
+<span class="nx">appendChild</span><span class="p">()</span>
+<span class="nx">cloneNode</span><span class="p">()</span>
+<span class="nx">compareDocumentPosition</span><span class="p">()</span>
+<span class="nx">contains</span><span class="p">()</span>
+<span class="nx">hasChildNodes</span><span class="p">()</span>
+<span class="nx">insertBefore</span><span class="p">()</span>
+<span class="nx">isEqualNode</span><span class="p">()</span>
+<span class="nx">removeChild</span><span class="p">()</span>
+<span class="nx">replaceChild</span><span class="p">()</span>
+
+<span class="c1">//Document Methods</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">()</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">()</span>
+
+<span class="c1">//HTML *Element properties</span>
+<span class="nx">innerHTML</span>
+<span class="nx">outerHTML</span>
+<span class="nx">textContent</span>
+<span class="nx">innerText</span>
+<span class="nx">outerText</span>
+<span class="nx">firstElementChild</span>
+<span class="nx">lastElementChild</span>
+<span class="nx">nextElementChild</span>
+<span class="nx">previousElementChild</span>
+<span class="nx">children</span>
+
+<span class="c1">//HTML Element Method</span>
+<span class="nx">insertAdjancentHTML</span><span class="p">()</span>
+
+</code></pre>
+</div>
+
+<h3 id="identifying-the-type-and-name-of-a-node">Identifying the Type and Name of a Node</h3>
+
+<p>Every node has a nodeType and nodeName property that is inherited from Node.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Hi<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="cm">/* This is DOCUMENT_TYPE_NODE or nodeType 10
+      because Node.DOCUMENT_TYPE_NODE === 10 */</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">doctype</span><span class="p">.</span><span class="nx">nodeName</span><span class="p">,</span> <span class="cm">/* logs 'html' also try document.doctype to get &lt;!DOCTYPE html&gt; */</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">doctype</span><span class="p">.</span><span class="nx">nodeType</span> <span class="c1">//logs 10 which maps to DOCUMENT_TYPE_NODE );</span>
+      <span class="c1">//This is DOCUMENT_NODE or nodeType 9 because Node.DOCUMENT_NODE === 9</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">nodeName</span><span class="p">,</span> <span class="c1">//logs '#document' document.nodeType //logs 9 which maps to DOCUMENT_NODE</span>
+      <span class="p">);</span>
+      <span class="cm">/* This is DOCUMENT_FRAGMENT_NODE or nodeType 11
+      because Node.DOCUMENT_FRAGMENT_NODE === 11 */</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">createDocumentFragment</span><span class="p">().</span><span class="nx">nodeName</span><span class="p">,</span> <span class="c1">//logs '#document-fragment' document.createDocumentFragment().nodeType /* logs 11 which maps to</span>
+      <span class="nx">DOCUMENT_FRAGMENT_NODE</span> <span class="o">*</span><span class="sr">/</span><span class="err">
+</span>      <span class="p">);</span>
+      <span class="c1">//This is ELEMENT_NODE or nodeType 1 because Node. ELEMENT_NODE === 1</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">nodeName</span><span class="p">,</span> <span class="c1">//logs 'A' document.querySelector('a').nodeType //logs 1 which maps to ELEMENT_NODE</span>
+      <span class="p">);</span>
+      <span class="c1">//This is TEXT_NODE or nodeType 3 because Node.TEXT_NODE === 3</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">firstChild</span><span class="p">.</span><span class="nx">nodeName</span><span class="p">,</span> <span class="c1">//logs '#text' document.querySelector('a').firstChild.nodeType /* logs 3 which maps</span>
+      <span class="p">);</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<p>the fastest way to determine whether a node is of a certain type is to simply check its nodeType property.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Hi<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+      <span class="c1">//is &lt;a&gt; a ELEMENT_NODE? console.log(document.querySelector('a').nodeType === 1); /* logs true,</span>
+      <span class="o">&lt;</span><span class="nx">a</span><span class="o">&gt;</span> <span class="nx">is</span> <span class="nx">an</span> <span class="nx">Element</span> <span class="nx">node</span> <span class="o">*</span><span class="sr">/</span><span class="err">
+</span>          <span class="c1">//or use Node.ELEMENT_NODE which is a property containing the numeric value of 1</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">nodeType</span> <span class="o">===</span> <span class="nx">Node</span><span class="p">.</span><span class="nx">ELEMENT_NODE</span><span class="p">);</span> <span class="c1">//logs true, &lt;a&gt; is an Element node</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre>
+</div>
+
+<h3 id="16-getting-a-nodes-value">1.6 Getting a Node’s Value</h3>
+<p>The nodeValue property returns null for most of the node types (except Text and Comment).</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Hi<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">doctype</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">)</span><span class="c1">//null</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">)</span><span class="c1">//null</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">createDocumentFragment</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">)</span><span class="c1">//undefined</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">nodeValue</span><span class="p">)</span><span class="c1">//null</span>
+    
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'a'</span><span class="p">).</span><span class="nx">firstChild</span><span class="p">.</span><span class="nx">nodeValue</span><span class="p">)</span><span class="c1">// 'Hi'</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre>
+</div>
+<p>Text or Comment node values can be set by providing new string values for the nodeValue property (i.e., document.body.firstElement Child.nodeValue = ‘hi’).</p>
+
+<h3 id="17-using-javascript-methods-to-create-element-and-text-nodes">1.7 Using JavaScript Methods to Create Element and Text Nodes</h3>
+

@@ -291,10 +291,13 @@ The removed `inject` wasn't generaly useful for directives so there should be no
 ```
 feat(*):Submit cart to The user cart when user login(/login)
 
-What: Add submit cart function subCart() to login module
+  What: Add submit cart function subCart() to login module
 
-Why : Cart info should not lost when anomous user login
+  Why : Cart info should not lost when anomous user login
 
-How : read cart info from cookie and push it to server.
+  How : read cart info from cookie and push it to server.
+
+  Changes to be committed:
+       new file:   _posts/Front-end/2018-09-10-git-message-template.md
 
 ```

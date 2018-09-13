@@ -11,6 +11,7 @@ tags:
   - JS
   - HTML
 ---
+# 本文档只作为参考，其目的在于规范代码注释格式！
 
 # JSDoc
 JSDoc用于所有类，字段和方法。
@@ -254,6 +255,7 @@ MyClass.RETRY_COUNT = 33;
 类型注释可在@ param，@ return，@ this和@type标签上找到，也可选择在@ const，@ export和任何可见性标签上找到。附加到JSDoc标记的类型注释必须始终用大括号括起来。
 
 ### 7.10.1可空性
+**只在定义const 时使用**
 类型系统定义修饰符！和？对于非null和可空，分别为。
 
 **原始类型（undefined，string，number，boolean，symbol和function（...）：...）和记录对象（{foo：string，bar：number}）默认为非空类型。不要添加  “！”。**

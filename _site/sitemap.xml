@@ -53,9 +53,6 @@
 <loc>http://localhost:4000/categories</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/git</loc>
-</url>
-<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>

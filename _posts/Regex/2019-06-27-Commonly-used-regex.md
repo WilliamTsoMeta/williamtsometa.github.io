@@ -1,3 +1,10 @@
+---
+tags:
+  - regex
+categories:
+  - Regex
+---
+
 ```js
 // 手机号：
 /^1[3|5|7|8]\d{9}$/gi

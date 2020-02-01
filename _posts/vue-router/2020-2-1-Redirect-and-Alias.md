@@ -1,3 +1,9 @@
+---
+tags:
+  - vue-router
+categories:
+  - vue-router
+---
 # 重定向和别名
 
 ### 重定向

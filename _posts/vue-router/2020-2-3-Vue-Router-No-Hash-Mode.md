@@ -1,3 +1,10 @@
+---
+tags:
+  - vue-router
+categories:
+  - vue-router
+---
+
 To get rid of # in URL we need to use `history.pushState`.We can simply config in it when new vue-router istance:
 
 ```js

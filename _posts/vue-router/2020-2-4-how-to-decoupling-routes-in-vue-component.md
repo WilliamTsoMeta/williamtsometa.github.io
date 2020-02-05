@@ -81,7 +81,7 @@ routes: [
 ];
 ```
 
-We can return an object to router props option to achieve our goal by leverage function mode.
+We can pass an object to props option of router object to achieve our goal by leverage function mode.
 
 Access demo url: http://localhost:8081/#/decoupling/123?query_a=1
 To receive your params in your component.
